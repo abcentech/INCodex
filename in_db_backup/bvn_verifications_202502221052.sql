@@ -1,0 +1,13 @@
+INSERT INTO public.bvn_verifications (user_id,otp,firstname,lastname,phone_no,date_of_birth,created_at,updated_at) VALUES
+	 ('00000000-5bb0-e7db-6f8c-6d27378de964','$2a$10$1.jcYZ9ZSSil1JkbUHqWDOUosQTnhP9wlMicjKKdxXQD0ll3Nndrq','Divine','Tunde','+2347043410795','1985-02-01 00:00:00+00','2020-12-15 07:54:33+00','2020-12-15 07:54:33+00'),
+	 ('00000000-5aa4-0a77-9430-e60004ea1729','$2a$10$ZAOGQ6f23WWOhiyhiW46QuORaBdhMLSuTkuZwNUJ3v7zp3HwP7n/u','Divine','Tunde','+2347043410795','1985-02-01 00:00:00+00','2020-12-24 06:31:42+00','2020-12-24 06:31:42+00'),
+	 ('773752ac-322a-4776-9904-290baf1bd768','$2a$10$OxRMKehNF75ywikx1hFm5OXIqT73IY0JJxQOeZrNg4ZZcgMFugg6W','Titus','Odeyemi','+2347082953503','1978-03-03 00:00:00+00','2021-01-02 17:31:50+00','2021-01-02 17:31:50+00'),
+	 ('6580eb9d-88ef-48af-908f-6af79802de6d','$2a$10$yiII0caY86jcMsIV.B9zvedViA0DnaruTvd3XJnHxptjbs4Y5FV62','Quadri','Subair','+2348162825642','1982-04-27 01:00:00+01','2021-01-13 16:07:10+00','2021-01-13 16:07:10+00'),
+	 ('00000000-5bee-71cb-a272-c73de171a976','$2a$10$P2d0y6fW3SzxU.aP6EcTKeAzgb1ysGRP40imdTM8qxQIX/QzeY3da','Inengiya','Ibifiri','+2349061933564','2000-06-03 01:00:00+01','2021-01-17 06:50:56+00','2021-01-17 06:50:56+00'),
+	 ('e4232393-ce84-4d6c-a0a4-61fe002d738e','$2a$10$1BnuOBdxZJ8Bqdh.PXQDuev1r1aedIlmqr7UhjdTjjJLyYdYriOo.','Sampson','Worlu','+2348063504838','1989-05-13 01:00:00+01','2021-01-22 04:18:33+00','2021-01-22 04:18:33+00'),
+	 ('00000000-5cdd-66fe-be14-68356b4d2300','$2a$10$PawC8tpneyGcsbVzulIcqeA5DsexVOUI40TacXJBoAZagrR2OtLW6','Izuchukwu','Anyanwu','+2348095260083','1988-04-27 01:00:00+01','2021-02-07 06:14:30+00','2021-02-07 06:14:30+00'),
+	 ('4473bf81-526f-4247-aaf3-0109e1376ba7','$2a$10$Obin2egh8/w4LervJ88Ziu5GdLjl83uDwzQV4FI9gXkkpPttcG6RO','Hamidu','Amunega','+2348169292989','1991-05-19 01:00:00+01','2021-02-16 20:43:49+00','2021-02-16 20:43:49+00'),
+	 ('92dca34d-9b73-426d-a36b-1c62f74d53d3','$2a$10$dojtv8melHOzRrgyFAHCw.mDe35LPLv2pCqTuSEAzhTADGqY336OO','Quadri','Subair','+2348162825642','1982-04-27 01:00:00+01','2021-02-24 17:02:22+00','2021-02-24 17:02:22+00'),
+	 ('bffcda28-8442-4789-bcd6-121563e94fb3','$2a$10$gXAGrYggJZULN3vt/CBLAuAlfV/KtwbLMfyIaYbP91DtkmlZqTUle','Micheal','Okubanjo','+2349053293435','2000-10-07 01:00:00+01','2021-03-01 14:00:03+00','2021-03-01 14:00:03+00');
+INSERT INTO public.bvn_verifications (user_id,otp,firstname,lastname,phone_no,date_of_birth,created_at,updated_at) VALUES
+	 ('bd708fdd-5d07-4c05-9e7c-47af3914bfb9','$2a$10$Ya43hmMowNSiohxWKfnqCed6MafS.WBdF1Q9W45.pYu3Pdevhss8K','Chidera','Mbadugha','+2349026619935','2002-10-31 00:00:00+00','2021-03-16 14:17:56+00','2021-03-16 14:17:56+00');
