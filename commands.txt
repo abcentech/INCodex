@@ -1,0 +1,12 @@
+docker build --tag investnaira-backend .
+docker run --publish 8000:8000 investnaira-backend
+
+Running Docker Compose
+docker-compose build
+docker-compose run --rm web django-admin startproject investnaira .
+docker-compose up
+docker exec -it investnaira-backend /bin/bash # this allows you to enter into the interactive shell of your container
+docker exec -it investnaira-backend sh
+
+To create a new db diagram
+py manage.py graph_models --pydot -a -g -o investnaira_db.svg # It's an svg because the db is large, and you need to be able to zoom and scroll as you please

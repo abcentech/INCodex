@@ -1,0 +1,78 @@
+version: '3'
+
+services:
+  # Redis
+  redis:
+    image: redis:7-bookworm
+    container_name: redis
+
+  # PostgreSQL Database
+  db:
+    image: postgres:16
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    container_name: postgres_db
+
+  # Django Application
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    image: app:investnaira-backend
+    container_name: investnaira-backend
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - db
+
+  # Celery Worker
+  celery:
+    restart: always
+    build:
+      context: .
+    command: celery -A investnaira worker -l DEBUG
+    volumes:
+      - .:/app
+    container_name: celery
+    depends_on:
+      - db
+      - redis
+      - web
+
+  client:
+    build: ./nginx
+    ports:
+      - 8089:80
+    volumes:
+      - .:/usr/share/nginx/html
+    depends_on:
+      - web
+
+  celery-beat:
+    build: .
+    command: celery -A investnaira beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    volumes:
+      - .:/app
+    container_name: celery-beat
+    depends_on:
+      - db
+      - redis
+
+  # port forwarding
+  ngrok:
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - 4040:4040

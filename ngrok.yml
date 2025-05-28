@@ -1,0 +1,6 @@
+version: '2'
+authtoken: 2je4yhijewcYhtCMXdpTcaYx4LY_2Zy5jcvwR5NfSz4NWwG3m
+tunnels:
+  webapp:
+    proto: http
+    addr: web:8000

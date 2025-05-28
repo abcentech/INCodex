@@ -1,0 +1,11 @@
+Hello {{ user.username }},
+
+Thank you for joining InvestNaira. To verify your email address, please use the following One-Time Password (OTP):
+
+{{ otp }}
+
+This OTP will expire in 10 minutes.
+
+If you didn't request this, you can safely ignore this email.
+
+Thank you for using our service!
