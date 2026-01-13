@@ -25,6 +25,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     
     # custom
     is_verified = models.BooleanField(default=False)
+    is_legacy_user = models.BooleanField(default=False, help_text="User migrated from legacy system")
 
     objects = CustomUserManager()
 

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { kycIcon } from "@/utils/icons";
-import PostKycDashboard from "./_components/PostKycDashboard";
+import Overview from "./_components/Overview";
 import { useAuths } from "../../hook/useAuths";
 import LoadingSpinner from "../../components/Loader";
 
@@ -41,11 +41,11 @@ const Dashboard = () => {
   };
 
   if (loading) {
-    return <LoadingSpinner /> ; // Or a more sophisticated loading component
+    return <LoadingSpinner />; // Or a more sophisticated loading component
   }
 
   if (!user) {
-    return null; 
+    return null;
   }
 
   return (
@@ -61,7 +61,7 @@ const Dashboard = () => {
             dangerouslySetInnerHTML={{ __html: kycIcon }}
           />
           <p className="text-center text-sm md:text-base mb-4">
-            To perform any transaction, Complete KYC
+            Please complete your KYC to unlock full features.
           </p>
           <button
             className="w-full max-w-xs bg-primary text-white px-4 py-2 rounded-lg text-sm md:text-base"
@@ -71,7 +71,7 @@ const Dashboard = () => {
           </button>
         </div>
       ) : (
-        <PostKycDashboard />
+        <Overview />
       )}
     </div>
   );

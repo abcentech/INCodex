@@ -86,7 +86,7 @@ class UserSavingsPlan(models.Model):
     
     user = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
     savings_plan = models.ForeignKey(SavingsPlan, related_name='user_savings', on_delete=models.CASCADE, null=True)
-    title = models.CharField()
+    title = models.CharField(max_length=255)
     start_date = models.DateField(auto_now_add=True)
     next_transfer_date = models.DateField()
     units_bought = models.IntegerField(null=True)   # because not all savings plans are associated with a campaign

@@ -241,3 +241,67 @@ class VerifyUserView(APIView):
         except Customer.DoesNotExist:
             logger.error(f"User is not a customer")
             return Response({"error": "User is not a customer"}, status=status.HTTP_400_BAD_REQUEST)
+
+from utils.otp import generate_otp, verify_otp
+
+class CheckUserView(APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        email = request.data.get('email')
+        if not email:
+            return Response({'detail': 'Email is required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            user = User.objects.get(email=email)
+            return Response({
+                'exists': True,
+                'is_legacy': user.is_legacy_user,
+                'email': user.email
+            }, status=status.HTTP_200_OK)
+        except User.DoesNotExist:
+            return Response({'exists': False}, status=status.HTTP_200_OK)
+
+class LegacySendOTPView(APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        email = request.data.get('email')
+        try:
+            user = User.objects.get(email=email)
+            if not user.is_legacy_user:
+                 return Response({'detail': 'Not a legacy user'}, status=status.HTTP_400_BAD_REQUEST)
+            
+            otp_code = generate_otp(user)
+            # Send email
+            send_otp_email(settings.DEFAULT_FROM_EMAIL, email, 'account/email/password_reset_key.txt', otp_code)
+            
+            return Response({'detail': 'OTP sent'}, status=status.HTTP_200_OK)
+        except User.DoesNotExist:
+             return Response({'detail': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+
+class FinalizeMigrationView(APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        email = request.data.get('email')
+        otp = request.data.get('otp')
+        password = request.data.get('password')
+        
+        try:
+            user = User.objects.get(email=email)
+            if not user.is_legacy_user:
+                return Response({'detail': 'Not a legacy user'}, status=status.HTTP_400_BAD_REQUEST)
+            
+            if verify_otp(user, otp):
+                user.set_password(password)
+                user.is_legacy_user = False
+                user.save()
+                
+                # Generate Token (using dj_rest_auth logic if needed, or simple JWT)
+                # For now, just return success, frontend can then call login
+                return Response({'detail': 'Migration successful. Please login.'}, status=status.HTTP_200_OK)
+            else:
+                return Response({'detail': 'Invalid OTP'}, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            return Response({'detail': 'User not found'}, status=status.HTTP_404_NOT_FOUND)

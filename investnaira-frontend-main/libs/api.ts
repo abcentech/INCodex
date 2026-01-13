@@ -6,7 +6,7 @@ import { setAccessToken, setVerified } from "./authSlice";
 import { clearAuth } from "./authSlice";
 import { setUser } from "./authSlice";
 
-const baseURL = "https://investnaira.vercel.app/api/v1";
+const baseURL = process.env.NEXT_PUBLIC_API_URL || "https://investnaira.vercel.app/api/v1";
 
 export interface UserData {
   email?: string;
@@ -102,8 +102,13 @@ export const verifyAccount = async (
     }
 
     store.dispatch(setVerified(true));
-    const userData = await fetchUserData();
-    store.dispatch(setUser(userData));
+    store.dispatch(setVerified(true));
+    try {
+      const userData = await fetchUserData();
+      store.dispatch(setUser(userData));
+    } catch (e) {
+      console.warn("Could not fetch user data after verification (likely not logged in)", e);
+    }
 
     console.log("Successful response from server:", data);
     return { success: true, ...data };

@@ -96,7 +96,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 # CSRF
-CSRF_TRUSTED_ORIGINS = ['http://*.127.0.0.1', os.getenv('VM_HOST')]
+CSRF_TRUSTED_ORIGINS = ['http://*.127.0.0.1', 'http://localhost:3000', 'http://localhost:8000']
 
 # Application definition
 
@@ -319,7 +319,8 @@ PASSWORD_RESET_CONFIRM_REDIRECT_BASE_URL = \
 
 LOGIN_URL = "/api/v1/auth/login"
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = os.getenv('EMAIL_HOST')                        # smtp-relay.sendinblue.com
 # EMAIL_USE_TLS = True                                      # False
 EMAIL_PORT = os.getenv('EMAIL_PORT')                        # 587 no encryption 465 with encryption

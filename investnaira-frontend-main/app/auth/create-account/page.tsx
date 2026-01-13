@@ -220,7 +220,7 @@ const Page: React.FC = () => {
         router.push("/auth/verify/create-account");
       } else {
         toast.error(
-          response?.message && "Signup unsuccessful. Please try again."
+          response?.message || "Signup unsuccessful. Please try again."
         );
       }
     } catch (err) {

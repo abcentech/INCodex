@@ -3,17 +3,24 @@ from rest_framework import serializers
 from .models import Campaign, UserSavingsPlan, SavingsPlan
 
 
+
+class SimpleSavingsPlanSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SavingsPlan
+        fields = ['id', 'tier', 'contribution_frequency', 'duration', 'early_withdrawal_penalty', 'min_investment']
+
 class CampaignSerializer(serializers.ModelSerializer):
     savings_plans_data = serializers.ListField(child=serializers.DictField(), write_only=True)
+    savings_plans = SimpleSavingsPlanSerializer(source='savingsplan_set', many=True, read_only=True)
     
     class Meta:
         model = Campaign
-        fields = ['id', 'title', 'business', 'description', 'start_date', 'end_date', 'risk_level', 'unit_price', 'min_units', 'total_units', 'current_units', 'savings_plans_data', 'created_at', 'updated_at']
+        fields = ['id', 'title', 'business', 'description', 'start_date', 'end_date', 'risk_level', 'unit_price', 'min_units', 'total_units', 'current_units', 'savings_plans_data', 'savings_plans', 'created_at', 'updated_at']
         read_only_fields = ['business']
         
     def create(self, validated_data):
         validated_data_copy = validated_data.copy()
-        savings_plans_data = validated_data_copy.pop('savings_plans_data', [])   # before campaign because 'pop' removes the data not found in a campaign
+        savings_plans_data = validated_data_copy.pop('savings_plans_data', [])
         campaign = Campaign.objects.create(**validated_data_copy)
         
         for plan_data in savings_plans_data:

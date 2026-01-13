@@ -23,11 +23,14 @@ SECRET_KEY = os.getenv('MONNIFY_SECRET_KEY')
 API_KEY = os.getenv('MONNIFY_API_KEY')
 BASE_URL = 'https://sandbox.monnify.com'
 
-header = {
-        "Authorization": f"Bearer {generate_access_token(BASE_URL, API_KEY, SECRET_KEY)}",
-    }
 
 # utils start here
+def get_header():
+    token = generate_access_token(BASE_URL, API_KEY, SECRET_KEY)
+    return {
+        "Authorization": f"Bearer {token}",
+    }
+
 def initialize_transaction(payload):
     '''
     Sample data:
@@ -38,7 +41,7 @@ def initialize_transaction(payload):
     '''
     url = f'{BASE_URL}/transaction/initialize'
     
-    response = requests.post(url=url, data=payload, headers=header)
+    response = requests.post(url=url, data=payload, headers=get_header())
     data = response.json()
     
     return data
@@ -82,7 +85,7 @@ def create_virtual_account(payload):
         'getAllAvailableBanks': True
     }
     
-    response = requests.post(url, data=data, headers=header)
+    response = requests.post(url, data=data, headers=get_header())
     
     return response.json()
 
