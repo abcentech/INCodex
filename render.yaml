@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: incodex-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn investnaira.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: WEB_CONCURRENCY
+        value: 4
+databases:
+  - name: incodex-db
+    databaseName: incodex
+    user: incodex_user
+    plan: free # or starter
