@@ -3,6 +3,7 @@
 import { ReactNode, useState } from "react";
 import DashboardSideBar from "./_components/DashboardSideBar";
 import MobileBottomNav from "./_components/MobileBottomNav";
+import NotificationBell from "@/components/NotificationBell";
 
 export default function DashboardContent({ children }: { children: ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +14,12 @@ export default function DashboardContent({ children }: { children: ReactNode }) 
         <DashboardSideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       </div>
       <div className="flex flex-col w-full  overflow-y-scroll h-full custom-scrollbar lg:px-10">
-        <main className="flex-1 flex flex-col gap-4 p-4 lg:gap-6 pb-16 md:pb-4 lg:mt-0 mt-6">
+        {/* Header with Notification Bell */}
+        <div className="flex justify-end items-center p-4 lg:pt-6">
+          <NotificationBell />
+        </div>
+
+        <main className="flex-1 flex flex-col gap-4 p-4 lg:gap-6 pb-16 md:pb-4 lg:mt-0">
           {children}
         </main>
         <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t">

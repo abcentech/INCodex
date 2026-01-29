@@ -84,15 +84,31 @@ class UserSavingsPlan(models.Model):
         ('CANCELLED', 'Cancelled'), 
     ]
     
+    GOAL_TYPES = [
+        ('EMERGENCY_FUND', 'Emergency Fund'),
+        ('RETIREMENT', 'Retirement'),
+        ('EDUCATION', 'Education'),
+        ('VACATION', 'Vacation'),
+        ('CUSTOM', 'Custom'),
+    ]
+
     user = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
     savings_plan = models.ForeignKey(SavingsPlan, related_name='user_savings', on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=255)
     start_date = models.DateField(auto_now_add=True)
     next_transfer_date = models.DateField()
     units_bought = models.IntegerField(null=True)   # because not all savings plans are associated with a campaign
-    balance = models.DecimalField(max_digits=10, decimal_places=2)
+    balance = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     goal_amount = models.DecimalField(max_digits=10, decimal_places=2)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES)
+    goal_type = models.CharField(max_length=20, choices=GOAL_TYPES, default='CUSTOM')
+    target_date = models.DateField(null=True, blank=True)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE')
+    
+    # Auto-transfer fields
+    auto_transfer_enabled = models.BooleanField(default=False, help_text="Enable automatic recurring transfers")
+    transfer_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True, help_text="Amount to transfer automatically")
+    last_transfer_date = models.DateTimeField(null=True, blank=True, help_text="Last successful auto-transfer date")
+    failed_transfer_count = models.IntegerField(default=0, help_text="Consecutive failed transfer attempts")
     
     def __str__(self):
         return f'{self.user}\'s {self.savings_plan} Plan'

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { MdHomeFilled, MdOutlineWallet } from "react-icons/md";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { GiChart } from "react-icons/gi";
@@ -13,16 +13,18 @@ const menuItems = [
 
 export default function MobileBottomNav() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const isDemo = searchParams.get('demo') === 'true';
+  const queryParam = isDemo ? '?demo=true' : '';
 
   return (
     <nav className="flex justify-around items-center h-16 text-gray-500 font-sans">
       {menuItems.map((item) => (
         <Link
           key={item.href}
-          href={item.href}
-          className={`flex flex-col items-center hover:text-primary ${
-            pathname === item.href ? " text-primary" : ""
-          }`}
+          href={`${item.href}${queryParam}`}
+          className={`flex flex-col items-center hover:text-primary ${pathname === item.href ? " text-primary" : ""
+            }`}
         >
           <item.icon className="text-2xl" />
           <span className="text-sm md:text-base">{item.label}</span>

@@ -1,12 +1,22 @@
 "use strict";
-import { headers } from "next/headers";
 import { store } from "./store";
 import { getAccessToken } from "./authUtils";
 import { setAccessToken, setVerified } from "./authSlice";
 import { clearAuth } from "./authSlice";
 import { setUser } from "./authSlice";
 
-const baseURL = process.env.NEXT_PUBLIC_API_URL || "https://investnaira.vercel.app/api/v1";
+const getBaseUrl = () => {
+  let url = process.env.NEXT_PUBLIC_API_URL || "https://investnaira.vercel.app/api/v1";
+  // Remove trailing slash
+  url = url.replace(/\/$/, "");
+  // Append /api/v1 if not present
+  if (!url.endsWith("/api/v1")) {
+    url = `${url}/api/v1`;
+  }
+  return url;
+};
+
+const baseURL = getBaseUrl();
 
 export interface UserData {
   email?: string;
@@ -19,6 +29,7 @@ export interface UserData {
   user_type?: string;
   gender?: string;
   location?: string;
+  is_verified?: boolean;
 }
 
 export interface SignUpResponse {
@@ -191,11 +202,23 @@ export const login = async (email: string, password: string): Promise<any> => {
 
     console.log("Successful login response from server:", data);
 
-    // Store the access token in Redux
+    // Store the access token and user in Redux
+    if (data['2fa_required']) {
+      console.log("2FA verification required for user");
+      return { success: true, '2fa_required': true, pre_auth_token: data.pre_auth_token, email: data.email };
+    }
+
     if (data.access) {
       store.dispatch(setAccessToken(data.access));
     } else {
       console.warn("Login successful, but no access token received");
+    }
+
+    if (data.user) {
+      store.dispatch(setUser(data.user));
+      if (data.user.is_verified !== undefined) {
+        store.dispatch(setVerified(data.user.is_verified));
+      }
     }
 
     return { success: true, ...data };
@@ -207,6 +230,45 @@ export const login = async (email: string, password: string): Promise<any> => {
         error instanceof Error
           ? error.message
           : "An unexpected error occurred during login",
+    };
+  }
+};
+
+export const verify2FA = async (pre_auth_token: string, code: string): Promise<any> => {
+  console.log(`Verifying 2FA for token: ${pre_auth_token.substring(0, 10)}...`);
+  try {
+    const response = await fetch(`${baseURL}/auth/2fa-verify/`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ pre_auth_token, code }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.detail || "Invalid 2FA code");
+    }
+
+    if (data.access) {
+      store.dispatch(setAccessToken(data.access));
+    }
+
+    if (data.user) {
+      store.dispatch(setUser(data.user));
+      if (data.user.is_verified !== undefined) {
+        store.dispatch(setVerified(data.user.is_verified));
+      }
+    }
+
+    return { success: true, ...data };
+  } catch (error) {
+    console.error("Error during 2FA verification:", error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : "2FA verification failed",
     };
   }
 };
@@ -465,4 +527,49 @@ export const updateUserData = async (
     console.error("Error updating user data:", error);
     throw error;
   }
+};
+
+export const depositFunds = async (amount: number, description: string): Promise<any> => {
+  const state = store.getState();
+  const accessToken = getAccessToken(state);
+  const response = await fetch(`${baseURL}/wallet/deposit/`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${accessToken}`,
+    },
+    body: JSON.stringify({ amount, description }),
+  });
+  return response.json();
+};
+
+export const withdrawFunds = async (amount: number, description: string): Promise<any> => {
+  const state = store.getState();
+  const accessToken = getAccessToken(state);
+  const response = await fetch(`${baseURL}/wallet/withdraw/`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${accessToken}`,
+    },
+    body: JSON.stringify({ amount, description }),
+  });
+  return response.json();
+};
+
+export const createInvestment = async (savings_plan: string, amount: number): Promise<any> => {
+  const state = store.getState();
+  const accessToken = getAccessToken(state);
+  const response = await fetch(`${baseURL}/campaigns/user-savings-plans/`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${accessToken}`,
+    },
+    body: JSON.stringify({ savings_plan, amount }),
+  });
+  return response.json();
 };

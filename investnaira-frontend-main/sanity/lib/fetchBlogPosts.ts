@@ -6,9 +6,9 @@ export interface BlogPostType {
   body: any[];
   imageUrl?: string;
   slug: {
-    current : string;
+    current: string;
   }
-  categories?: string;
+  categories?: string[];
 }
 
 export const fetchBlogPosts = async (): Promise<BlogPostType[]> => {

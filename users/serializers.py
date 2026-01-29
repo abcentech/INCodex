@@ -8,11 +8,26 @@ from .models import Customer, Business, OTP
 from wallet.serializers import WalletSerializer
 
 User = get_user_model()
+from .models import Customer, Business, OTP, UserSecurity, LoginHistory
+
+class UserSecuritySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserSecurity
+        fields = ['is_2fa_enabled', 'active_sessions_count', 'last_login_ip', 'last_login_device']
+        read_only_fields = ['active_sessions_count', 'last_login_ip', 'last_login_device']
+
+class LoginHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LoginHistory
+        fields = ['id', 'ip_address', 'device_info', 'location', 'timestamp', 'is_successful']
+
 class UserSerializer(serializers.ModelSerializer):
     wallet = WalletSerializer(read_only=True)
+    is_2fa_enabled = serializers.BooleanField(source='security.is_2fa_enabled', read_only=True)
+    
     class Meta:
         model = User
-        fields = ['id', 'email', 'phone_number', 'wallet', 'user_type']
+        fields = ['id', 'email', 'phone_number', 'wallet', 'user_type', 'is_verified', 'is_2fa_enabled']
         read_only_fields = ['id']
         
     def to_representation(self, instance):
@@ -182,3 +197,11 @@ class IdentityVerificationSerializer(serializers.Serializer):
     bvn = serializers.CharField(max_length=11)
     account_number = serializers.CharField(max_length=10)
     bank_code = serializers.CharField(max_length=10)
+
+from .models import UserTask
+
+class UserTaskSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserTask
+        fields = ['id', 'title', 'description', 'action_link', 'is_completed', 'reward_text', 'created_at']
+        read_only_fields = ['id', 'reward_text', 'created_at']

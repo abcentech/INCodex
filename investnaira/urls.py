@@ -26,7 +26,11 @@ from rest_framework.documentation import include_docs_urls
 
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerSplitView, SpectacularYAMLAPIView, SpectacularJSONAPIView
 
-from users.views import CustomConfirmEmailView, VerifyOTPView, CustomResendEmailVerificationView, CustomPasswordResetView, CustomPasswordResetConfirmView
+from users.views import (
+    CustomConfirmEmailView, VerifyOTPView, CustomResendEmailVerificationView, 
+    CustomPasswordResetView, CustomPasswordResetConfirmView, CustomLoginView,
+    Login2FAVerifyView
+)
 
 
 schema_view = get_schema_view(title='Investnaira API', url='http://localhost:8000/', urlconf='investnaira.urls', description='API for Investnaira', version='1.0.0')
@@ -43,7 +47,8 @@ urlpatterns = [
     path('api/v1/schema-json', SpectacularJSONAPIView.as_view(), name='schema-json'),
     
     # AUTH URLS
-    re_path(r'^api/v1/auth/login', LoginView.as_view(), name='login'),
+    re_path(r'^api/v1/auth/login', CustomLoginView.as_view(), name='login'),
+    re_path(r'^api/v1/auth/2fa-verify', Login2FAVerifyView.as_view(), name='2fa-verify'),
     re_path(r'^api/v1/auth/token/refresh', TokenRefreshView.as_view(), name='token_refresh'),
     re_path(r'^api/v1/auth/logout', LogoutView.as_view(), name='logout'),
     re_path(r'^api/v1/auth/user', UserDetailsView.as_view(), name='user'),
@@ -65,4 +70,9 @@ urlpatterns = [
     
     # CAMPIAGN URLS
     path('api/v1/campaigns/', include('campaigns.urls')),
+    
+    # NOTIFICATION URLS
+    path('api/v1/notifications/', include('notifications.urls')),
+    path('api/v1/referrals/', include('referrals.urls')),
+    path('api/v1/chatbot/', include('chatbot.urls')),
 ]

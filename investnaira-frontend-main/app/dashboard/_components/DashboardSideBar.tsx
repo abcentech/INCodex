@@ -14,7 +14,9 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { GiChart } from "react-icons/gi";
 import { logout } from '@/libs/api';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useTheme } from '../../../context/ThemeContext';
+import { Moon, Sun } from 'lucide-react';
 
 
 interface DashboardSideBarProps {
@@ -25,6 +27,11 @@ interface DashboardSideBarProps {
 export default function DashboardSideBar({ isOpen, onClose }: DashboardSideBarProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const { theme, toggleTheme } = useTheme();
+
+  const isDemo = searchParams.get('demo') === 'true';
+  const queryParam = isDemo ? '?demo=true' : '';
 
   const menuItems = [
     { href: "/dashboard", icon: <MdHomeFilled />, label: "Home" },
@@ -45,49 +52,64 @@ export default function DashboardSideBar({ isOpen, onClose }: DashboardSideBarPr
 
 
   return (
-     <div className=" border-r h-screen flex flex-col justify-between py-6 px-8">
-          <div className="flex flex-col gap-14">
-            <div>
-               <Image
+    <div className=" border-r h-screen flex flex-col justify-between py-6 px-8">
+      <div className="flex flex-col gap-6">
+        <div className="flex items-center justify-between">
+          <Image
             src={logofullgreen}
             alt="Investnaira Logo"
             width={150}
             className="max-[375px]:hidden block"
-            />
-            </div>
-            <nav className=" flex flex-col gap-3">
-              {menuItems.map((item) => (
-                <React.Fragment key={item.href}>
-                  <Link
-                    className={clsx(
-                      "flex items-center text-sm gap-2 rounded-lg px-3 py-2 transition-all font-sans text-gray-500 ",
-                      {
-                        "bg-primary text-white": pathname === item.href,
-                      }
-                    )}
-                    href={item.href}
-                  >
-                    <div className="text-2xl">{item.icon}</div>
-                    {item.label}
-                  </Link>
-                  <Separator className="" />
-                </React.Fragment>
-              ))}
-            </nav>
-          </div>
-      
-          <div className="">
-            <button
-              className="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-500 text-sm transition-all hover:text-primary bg-gray-100 font-sans pr-16"
-              onClick={handleLogout}
-            >
-              <div className="text-2xl">
-                <IoLogOut />
-              </div>
-              Logout
-            </button>
-          </div>
+          />
         </div>
+
+        {/* Theme Toggle */}
+        <button
+          onClick={toggleTheme}
+          className="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-500 dark:text-gray-300 text-sm transition-all hover:bg-gray-100 dark:hover:bg-slate-800 font-sans w-full"
+          aria-label="Toggle Theme"
+        >
+          <div className="text-2xl">
+            {theme === 'dark' ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-slate-600" />}
+          </div>
+          {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+        </button>
+
+        <Separator className="" />
+
+        <nav className=" flex flex-col gap-3">
+          {menuItems.map((item) => (
+            <React.Fragment key={item.href}>
+              <Link
+                className={clsx(
+                  "flex items-center text-sm gap-2 rounded-lg px-3 py-2 transition-all font-sans text-gray-500 ",
+                  {
+                    "bg-primary text-white": pathname === item.href,
+                  }
+                )}
+                href={`${item.href}${queryParam}`}
+              >
+                <div className="text-2xl">{item.icon}</div>
+                {item.label}
+              </Link>
+              <Separator className="" />
+            </React.Fragment>
+          ))}
+        </nav>
+      </div>
+
+      <div className="">
+        <button
+          className="flex items-center gap-2 rounded-lg px-3 py-2 text-gray-500 text-sm transition-all hover:text-primary bg-gray-100 font-sans pr-16"
+          onClick={handleLogout}
+        >
+          <div className="text-2xl">
+            <IoLogOut />
+          </div>
+          Logout
+        </button>
+      </div>
+    </div>
 
   );
 }

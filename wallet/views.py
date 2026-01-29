@@ -9,7 +9,7 @@ class TransactionListView(ListAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        return get_user_transactions(self.request.user)
+        return get_user_transactions(self.request.user).order_by('-created_at')
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -80,7 +80,73 @@ class TransferView(APIView):
         except User.DoesNotExist:
             return Response({'detail': 'Recipient not found'}, status=status.HTTP_404_NOT_FOUND)
 
+class DepositView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        amount = request.data.get('amount')
+        description = request.data.get('description', 'Wallet Deposit')
+
+        if not amount:
+            return Response({'detail': 'Amount is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            amount = Decimal(str(amount))
+            if amount <= 0:
+                 return Response({'detail': 'Amount must be positive'}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception:
+             return Response({'detail': 'Invalid amount'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            tx = create_transaction(
+                receiver_wallet=request.user.wallet,
+                amount=amount,
+                description=description,
+                transaction_type='DEPOSIT'
+            )
+            success, msg = process_transaction(tx.id)
+            if success:
+                return Response({'detail': 'Deposit successful', 'balance': request.user.wallet.balance}, status=status.HTTP_200_OK)
+            return Response({'detail': msg}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response({'detail': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+class WithdrawView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        amount = request.data.get('amount')
+        description = request.data.get('description', 'Wallet Withdrawal')
+
+        if not amount:
+            return Response({'detail': 'Amount is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            amount = Decimal(str(amount))
+            if amount <= 0:
+                 return Response({'detail': 'Amount must be positive'}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception:
+             return Response({'detail': 'Invalid amount'}, status=status.HTTP_400_BAD_REQUEST)
+
+        if request.user.wallet.balance < amount:
+            return Response({'detail': 'Insufficient funds'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            tx = create_transaction(
+                sender_wallet=request.user.wallet,
+                amount=amount,
+                description=description,
+                transaction_type='WITHDRAWAL'
+            )
+            success, msg = process_transaction(tx.id)
+            if success:
+                return Response({'detail': 'Withdrawal successful', 'balance': request.user.wallet.balance}, status=status.HTTP_200_OK)
+            return Response({'detail': msg}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response({'detail': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 from django.db.models import Sum
+from decimal import Decimal
 from datetime import timedelta
 from django.utils import timezone
 from campaigns.models import UserSavingsPlan
@@ -108,17 +174,18 @@ class WalletAnalyticsView(APIView):
             'net_worth': total_net_worth
         }
 
-        # 2. Portfolio Growth (Chart Data) - Last 30 Days
+        # 2. Portfolio Growth (Chart Data) - Last 365 Days
         # This is a simplified reconstruction. For production, a daily snapshot table is better.
         # We start with current balance and work backwards using transactions.
         
-        days = 30
+        days = 365
         end_date = timezone.now().date()
         start_date = end_date - timedelta(days=days-1)
         
-        # Fetch transactions in the last 30 days
+        # Fetch transactions in the last 365 days
+        start_datetime = timezone.make_aware(timezone.datetime.combine(start_date, timezone.datetime.min.time()))
         transactions = get_user_transactions(user).filter(
-            created_at__date__gte=start_date
+            created_at__gte=start_datetime
         ).order_by('-created_at')
         
         daily_balances = []

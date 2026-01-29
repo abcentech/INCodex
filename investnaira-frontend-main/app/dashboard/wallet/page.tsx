@@ -1,38 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { ChevronDown } from "lucide-react";
+import React, { useState } from "react";
+import { ChevronDown, Wallet as WalletIcon, TrendingUp, DollarSign } from "lucide-react";
 import TransactionHistory from "../_components/TransactionHistory";
 import Deposit from "../_components/Deposit";
 import Withdrawal from "../_components/Withdrawal";
-// import { WalletResponse, fetchWalletDetails } from "@/libs/api";
 import { useTransactionSlice } from "@/hook/useTransaction";
+import StatsCard from "../_components/StatsCard";
 
 export default function Wallet() {
   const [activeSection, setActiveSection] = useState("transactionHistory");
-  // const [walletDetails, setWalletDetails] = useState<WalletResponse | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const { balance, transactions } = useTransactionSlice();
-
-  // useEffect(() => {
-  //   const getWalletDetails = async () => {
-  //     try {
-  //       const data = await fetchWalletDetails();
-  //       setWalletDetails(data);
-  //     } catch (error) {
-  //       setError(
-  //         error instanceof Error
-  //           ? error.message
-  //           : "Failed to fetch wallet details"
-  //       );
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   getWalletDetails();
-  // }, []);
+  const { balance } = useTransactionSlice();
 
   const renderSection = () => {
     switch (activeSection) {
@@ -47,114 +24,73 @@ export default function Wallet() {
     }
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  const handleOptionClick = (section: string) => {
-    setActiveSection(section);
-    setIsDropdownOpen(false);
-  };
+  const tabs = [
+    { id: "transactionHistory", label: "History" },
+    { id: "deposit", label: "Deposit" },
+    { id: "withdrawal", label: "Withdraw" },
+  ];
 
   return (
-    <div className="font-sans">
-      <h1 className="text-2xl font-bold">Wallet</h1>
-      <div className="w-full mt-8 md:mt-16">
-        <div className="lg:grid lg:grid-cols-3 gap-4 lg:gap-16 flex overflow-x-auto pb-4">
-          <div className="flex-shrink-0 w-[280px] lg:w-auto">
-            <div className="p-6 bg-dark text-white rounded-2xl shadow-md bg-[url('/images/tranparent-gray-bg.png')] bg-cover bg-center">
-              <p>Total </p>
-              <h2 className="text-4xl font-bold">
-                {/* ₦{walletDetails ? walletDetails.balance : "0.00"} */}₦
-                {balance ? balance : 0}
-              </h2>
-            </div>
-          </div>
-          <div className="flex-shrink-0 w-[280px] lg:w-auto">
-            <div className="p-6 bg-primary text-white rounded-2xl shadow-md bg-[url('/images/tranparent-green-bg.png')] bg-cover bg-center">
-              <p> Invested</p>
-              <h2 className="text-3xl md:text-4xl font-bold">₦70000</h2>
-            </div>
-          </div>
-          <div className="flex-shrink-0 w-[280px] lg:w-auto">
-            <div className="p-6 bg-tertiary text-white rounded-2xl shadow-md bg-[url('/images/tranparent-purple-bg.png')] bg-cover bg-center">
-              <p>Wallet</p>
-              <h2 className="text-3xl md:text-4xl font-bold">₦{balance}</h2>
-            </div>
-          </div>
-        </div>
+    <div className="space-y-8 animate-in fade-in duration-500 pb-10">
+      {/* Header */}
+      <div>
+        <h1 className="text-3xl font-black text-gray-900 dark:text-white font-rowdies">
+          My Wallet
+        </h1>
+        <p className="text-gray-500 dark:text-gray-400 font-gilroy text-lg">
+          Manage your funds and transactions.
+        </p>
       </div>
 
-      <div className="mt-16">
-        {/* Desktop view */}
-        <div className="hidden sm:flex justify-evenly items-center gap-16">
-          <button
-            className={`bg-gray-200 text-gray-600 font-medium text-sm px-4 w-full py-2 rounded-lg text-center ${
-              activeSection === "transactionHistory"
-                ? "bg-gray-900 text-white"
-                : ""
-            }`}
-            onClick={() => setActiveSection("transactionHistory")}
-          >
-            Transaction History
-          </button>
-          <button
-            className={`bg-gray-200 text-gray-600 font-medium text-sm px-4 w-full py-2 rounded-lg text-center ${
-              activeSection === "deposit" ? "bg-gray-900 text-white" : ""
-            }`}
-            onClick={() => setActiveSection("deposit")}
-          >
-            Deposit
-          </button>
-          <button
-            className={`bg-gray-200 text-gray-600 font-medium text-sm px-4 w-full py-2 rounded-lg text-center ${
-              activeSection === "withdrawal" ? "bg-gray-900 text-white" : ""
-            }`}
-            onClick={() => setActiveSection("withdrawal")}
-          >
-            Withdrawal
-          </button>
-        </div>
-
-        {/* Mobile view */}
-        <div className="sm:hidden relative">
-          <button
-            onClick={toggleDropdown}
-            className="w-full bg-gray-200 text-gray-600 font-medium text-sm px-4 py-2 rounded-lg text-left flex justify-between items-center"
-          >
-            {activeSection === "transactionHistory" && "Transaction History"}
-            {activeSection === "deposit" && "Deposit"}
-            {activeSection === "withdrawal" && "Withdrawal"}
-            <ChevronDown
-              className={`ml-2 h-4 w-4 transition-transform ${isDropdownOpen ? "transform rotate-180" : ""}`}
-            />
-          </button>
-          {isDropdownOpen && (
-            <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg">
-              <button
-                className="w-full text-left px-4 py-2 hover:bg-gray-100"
-                onClick={() => handleOptionClick("transactionHistory")}
-              >
-                Transaction History
-              </button>
-              <button
-                className="w-full text-left px-4 py-2 hover:bg-gray-100"
-                onClick={() => handleOptionClick("deposit")}
-              >
-                Deposit
-              </button>
-              <button
-                className="w-full text-left px-4 py-2 hover:bg-gray-100"
-                onClick={() => handleOptionClick("withdrawal")}
-              >
-                Withdrawal
-              </button>
-            </div>
-          )}
-        </div>
+      {/* Stats Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <StatsCard
+          label="Wallet Balance"
+          value={balance || 0}
+          icon={WalletIcon}
+          className="bg-gradient-to-br from-blue-900 to-blue-800 text-white border-none"
+        />
+        <StatsCard
+          label="Total Deposited"
+          value={1200000}
+          icon={DollarSign}
+          trend="up"
+          trendValue="+12% this month"
+        />
+        <StatsCard
+          label="Total Withdrawn"
+          value={45000}
+          icon={TrendingUp}
+          trend="down"
+          trendValue="Low Activity"
+        />
       </div>
 
-      <div className="mt-6">{renderSection()}</div>
+      {/* Main Content Area */}
+      <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 shadow-sm border border-gray-100 dark:border-slate-800 min-h-[500px]">
+        {/* Tabs */}
+        <div className="flex justify-center mb-8">
+          <div className="bg-gray-100 dark:bg-slate-800 p-1 rounded-xl inline-flex">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveSection(tab.id)}
+                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${activeSection === tab.id
+                  ? "bg-white dark:bg-slate-700 text-gray-900 dark:text-white shadow-sm scale-105"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Dynamic Section */}
+        <div className="animate-in slide-in-from-bottom-4 duration-300">
+          {renderSection()}
+        </div>
+      </div>
     </div>
   );
 }

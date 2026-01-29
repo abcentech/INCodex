@@ -4,19 +4,20 @@ import Image from "next/image";
 import { PortableText, PortableTextComponents } from '@portabletext/react';
 import { fetchBlogPosts, BlogPostType } from "@/sanity/lib/fetchBlogPosts";
 import BlogFooter from "./BlogFooter";
+import { dummyPosts } from "@/constants";
 
 interface BlogPostDetailProps {
   slug: string;
 }
 
 interface SanityImage {
-    _type: 'image';
-    asset: {
-      _ref: string;
-      _type: 'reference';
-    };
-    alt?: string;
-  }
+  _type: 'image';
+  asset: {
+    _ref: string;
+    _type: 'reference';
+  };
+  alt?: string;
+}
 
 const BlogPostSkeleton = () => {
   return (
@@ -67,11 +68,29 @@ const BlogPostSkeleton = () => {
 
 const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ slug }) => {
   const [post, setPost] = useState<BlogPostType | null>(null);
+  const [staticContent, setStaticContent] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
+        // 1. Check Static Posts first
+        const staticPost = dummyPosts.find(p => p.id === slug);
+        if (staticPost) {
+          setPost({
+            _id: staticPost.id,
+            title: staticPost.title,
+            body: [],
+            slug: { current: staticPost.id },
+            imageUrl: staticPost.imageUrl,
+            categories: [staticPost.category]
+          });
+          setStaticContent(staticPost.content);
+          setLoading(false);
+          return;
+        }
+
+        // 2. Fetch from Sanity
         const posts = await fetchBlogPosts();
         const foundPost = posts.find((post) => post.slug?.current === slug);
         setPost(foundPost || null);
@@ -88,55 +107,55 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ slug }) => {
   const components: PortableTextComponents = {
 
     types: {
-        image: ({ value }: { value: SanityImage }) => {
-          if (!value?.asset?._ref) {
-            return null;
-          }
-          
-          const ref = value.asset._ref;
-          const [, id, dimensions, format] = ref.split('-');
-          const [width, height] = dimensions ? dimensions.split('x') : [1920, 1080];
-          
-          const imageUrl = `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${id}-${dimensions}.${format}`;
-  
-          return (
-            <div className="relative w-full h-[400px] my-6">
-              <Image
-                src={imageUrl}
-                alt={value.alt || 'Blog post image'}
-                fill
-                className="rounded-lg object-cover"
-              />
-            </div>
-          );
-        },
+      image: ({ value }: { value: SanityImage }) => {
+        if (!value?.asset?._ref) {
+          return null;
+        }
+
+        const ref = value.asset._ref;
+        const [, id, dimensions, format] = ref.split('-');
+        const [width, height] = dimensions ? dimensions.split('x') : [1920, 1080];
+
+        const imageUrl = `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${id}-${dimensions}.${format}`;
+
+        return (
+          <div className="relative w-full h-[400px] my-6">
+            <Image
+              src={imageUrl}
+              alt={value.alt || 'Blog post image'}
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        );
       },
+    },
 
     block: {
-      normal: ({children}) => <p className="mb-6 text-base font-medium leading-relaxed text-gray-700 font-gilroy">{children}</p>,
-      h1: ({children}) => <h1 className="text-4xl font-extrabold mb-6 mt-8 text-gray-900">{children}</h1>,
-      h2: ({children}) => <h2 className="text-3xl font-extrabold mb-5 mt-8 text-gray-900">{children}</h2>,
-      h3: ({children}) => <h3 className="text-2xl font-extrabold mb-4 mt-6 text-gray-900">{children}</h3>,
-      h4: ({children}) => <h4 className="text-xl font-extrabold mb-4 mt-6 font-sans">{children}</h4>,
-      blockquote: ({children}) => (
+      normal: ({ children }) => <p className="mb-6 text-base font-medium leading-relaxed text-gray-700 font-gilroy">{children}</p>,
+      h1: ({ children }) => <h1 className="text-4xl font-extrabold mb-6 mt-8 text-gray-900">{children}</h1>,
+      h2: ({ children }) => <h2 className="text-3xl font-extrabold mb-5 mt-8 text-gray-900">{children}</h2>,
+      h3: ({ children }) => <h3 className="text-2xl font-extrabold mb-4 mt-6 text-gray-900">{children}</h3>,
+      h4: ({ children }) => <h4 className="text-xl font-extrabold mb-4 mt-6 font-sans">{children}</h4>,
+      blockquote: ({ children }) => (
         <blockquote className="border-l-4 border-gray-200 pl-4 mb-6 italic text-gray-700">
           {children}
         </blockquote>
       ),
     },
     marks: {
-      strong: ({children}) => <strong className="font-bold text-gray-900">{children}</strong>,
-      em: ({children}) => <em className="italic text-gray-800">{children}</em>,
-      code: ({children}) => (
+      strong: ({ children }) => <strong className="font-bold text-gray-900">{children}</strong>,
+      em: ({ children }) => <em className="italic text-gray-800">{children}</em>,
+      code: ({ children }) => (
         <code className="bg-gray-100 rounded px-1 py-0.5 font-mono text-sm text-gray-800">
           {children}
         </code>
       ),
-      link: ({value, children}) => {
+      link: ({ value, children }) => {
         const href = value?.href || ''
         const target = href.startsWith('http') ? '_blank' : undefined
         return (
-          <a 
+          <a
             href={href}
             target={target}
             rel={target === '_blank' ? 'noopener noreferrer' : undefined}
@@ -147,23 +166,23 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ slug }) => {
         )
       },
 
-      
+
     },
     list: {
-      bullet: ({children}) => (
+      bullet: ({ children }) => (
         <ul className="list-disc list-outside mb-6 ml-6 space-y-2 text-gray-700">
           {children}
         </ul>
       ),
-      number: ({children}) => (
+      number: ({ children }) => (
         <ol className="list-decimal list-outside mb-6 ml-6 space-y-2 text-gray-700">
           {children}
         </ol>
       ),
     },
     listItem: {
-      bullet: ({children}) => <li className="text-base font-medium leading-relaxed">{children}</li>,
-      number: ({children}) => <li className="text-base font-medium leading-relaxed">{children}</li>,
+      bullet: ({ children }) => <li className="text-base font-medium leading-relaxed">{children}</li>,
+      number: ({ children }) => <li className="text-base font-medium leading-relaxed">{children}</li>,
     },
   }
 
@@ -192,12 +211,16 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ slug }) => {
               className="rounded-lg object-cover"
             />
           </div>
-        )} 
+        )}
         <div className="prose max-w-none text-base font-extrabold font-sans mb-16">
-          <PortableText 
-            value={post.body} 
-            components={components}
-          />
+          {staticContent ? (
+            <div className="font-gilroy text-gray-800 leading-relaxed" dangerouslySetInnerHTML={{ __html: staticContent }} />
+          ) : (
+            <PortableText
+              value={post.body}
+              components={components}
+            />
+          )}
         </div>
       </div>
       <BlogFooter />

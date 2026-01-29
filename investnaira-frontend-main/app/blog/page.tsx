@@ -9,6 +9,7 @@ import BlogPagination from "./components/BlogPagination";
 import BlogFooter from "./components/BlogFooter";
 import { fetchBlogPosts, BlogPostType } from "@/sanity/lib/fetchBlogPosts";
 import { CategoryType } from "@/types";
+import { dummyPosts } from "@/constants";
 
 const POSTS_PER_PAGE = 6;
 
@@ -32,8 +33,30 @@ const Blog: React.FC = () => {
   useEffect(() => {
     const getPosts = async () => {
       try {
-        const data = await fetchBlogPosts();
-        setPosts(data);
+        let allPosts: BlogPostType[] = [];
+
+        // Convert dummyPosts to BlogPostType
+        const staticPosts: BlogPostType[] = dummyPosts.map(post => ({
+          _id: post.id,
+          title: post.title,
+          body: [], // Storing static content logic elsewhere or handling in Detail
+          slug: { current: post.id },
+          imageUrl: post.imageUrl,
+          categories: [post.category],
+          // Custom field for static content if needed, but for now we rely on Detail page finding it by ID/Slug
+        }));
+        allPosts = [...staticPosts];
+
+        try {
+          const sanityPosts = await fetchBlogPosts();
+          if (sanityPosts) {
+            allPosts = [...allPosts, ...sanityPosts];
+          }
+        } catch (sanityError) {
+          console.log("Sanity fetch failed, using static only", sanityError);
+        }
+
+        setPosts(allPosts);
       } catch (error) {
         console.error("Error fetching posts:", error);
       } finally {

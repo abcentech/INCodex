@@ -3,68 +3,127 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useAuths } from "../../../hook/useAuths";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { formatCurrency } from "../../../utils/format";
+import GoalCard from "../_components/GoalCard";
+import StatsCard from "../_components/StatsCard";
+import { Plus, Target, Trophy, Clock } from "lucide-react";
 
 const PlansPage = () => {
     const { accessToken } = useAuths();
-    const [campaigns, setCampaigns] = useState<any[]>([]);
+    const router = useRouter();
+    const [userPlans, setUserPlans] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const fetchCampaigns = async () => {
+        const fetchPlans = async () => {
             if (!accessToken) return;
             try {
-                const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/campaigns/`, {
+                // Fetch User's Active Plans instead of generic campaigns
+                const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/campaigns/user_savings_plans/`, {
                     headers: { Authorization: `Bearer ${accessToken}` }
                 });
-                setCampaigns(res.data);
+                setUserPlans(res.data);
             } catch (e) {
-                console.error(e);
+                console.error("Failed to fetch plans", e);
             } finally {
                 setLoading(false);
             }
         };
-        fetchCampaigns();
+        fetchPlans();
     }, [accessToken]);
 
-    if (loading) return <div className="p-8 text-center bg-gray-50 h-full">Loading plans...</div>;
+    // Calculate Stats
+    const totalGoalBalance = userPlans.reduce((acc, plan) => acc + parseFloat(plan.balance || 0), 0);
+    const activeGoals = userPlans.filter(p => p.status === 'ACTIVE').length;
+
+    // Map data to GoalCard props
+    const mapPlanToCard = (plan: any) => ({
+        id: plan.id,
+        title: plan.savings_plan?.campaign?.title || plan.title || "My Savings Goal",
+        category: plan.savings_plan?.campaign?.risk_level || "Personal",
+        targetAmount: plan.target_amount ? parseFloat(plan.target_amount) : undefined, // Assuming API might have this, else undefined
+        currentAmount: parseFloat(plan.balance || 0),
+        imageSrc: plan.savings_plan?.campaign?.images?.[0] || "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2070&auto=format&fit=crop",
+        status: plan.status as "ACTIVE" | "COMPLETED" | "PENDING",
+        autoTransfer: plan.auto_transfer_enabled,
+    });
 
     return (
-        <div className="p-6 bg-gray-50 min-h-screen">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Investment Plans</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {campaigns.map((camp: any) => (
-                    <div key={camp.id} className="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
-                        <div className="h-32 bg-gray-800 flex items-center justify-center text-white">
-                            {/* Placeholder for Campaign Image */}
-                            <span className="text-lg font-bold opacity-50">{camp.title}</span>
-                        </div>
-                        <div className="p-6 flex-1 flex flex-col">
-                            <div className="flex justify-between items-start mb-2">
-                                <h3 className="text-xl font-bold text-gray-900">{camp.title}</h3>
-                                <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full font-bold">
-                                    {camp.risk_level}
-                                </span>
-                            </div>
-                            <p className="text-gray-500 text-sm mb-4 line-clamp-3">{camp.description}</p>
-
-                            <div className="mt-auto pt-4 border-t border-gray-100">
-                                <div className="flex justify-between text-sm mb-2">
-                                    <span className="text-gray-500">Unit Price</span>
-                                    <span className="font-bold text-gray-900">{formatCurrency(parseFloat(camp.unit_price))}</span>
-                                </div>
-                                <Link href={`/dashboard/plans/${camp.id}`} className="block w-full bg-green-600 text-white text-center py-2 rounded-lg font-medium hover:bg-green-700 transition">
-                                    View Details
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+        <div className="space-y-8 animate-in fade-in duration-500 pb-10">
+            {/* Header */}
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                <div>
+                    <h1 className="text-3xl font-black text-gray-900 dark:text-white font-rowdies">
+                        Target Missions
+                    </h1>
+                    <p className="text-gray-500 dark:text-gray-400 font-gilroy text-lg">
+                        Track your progress towards financial freedom.
+                    </p>
+                </div>
+                <Link
+                    href="/dashboard/pot"
+                    className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 transition-transform active:scale-95"
+                >
+                    <Plus size={20} /> New Mission
+                </Link>
             </div>
-            {campaigns.length === 0 && (
-                <div className="text-center p-12 text-gray-500">No active investment plans available.</div>
-            )}
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <StatsCard
+                    label="Total Goal Balance"
+                    value={totalGoalBalance}
+                    icon={Target}
+                    className="bg-slate-900 text-white dark:bg-slate-800 border-none"
+                    trend="up"
+                    trendValue="On Track"
+                />
+                <StatsCard
+                    label="Active Missions"
+                    value={activeGoals}
+                    icon={Clock}
+                />
+                <StatsCard
+                    label="Goals Crush"
+                    value={userPlans.filter(p => p.status === 'COMPLETED').length}
+                    icon={Trophy}
+                />
+            </div>
+
+            {/* Plans Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Loading State */}
+                {loading && [1, 2, 3].map(i => (
+                    <div key={i} className="h-64 bg-gray-100 dark:bg-slate-800 rounded-3xl animate-pulse"></div>
+                ))}
+
+                {!loading && userPlans.length > 0 ? (
+                    userPlans.map((plan) => (
+                        <GoalCard
+                            key={plan.id}
+                            {...mapPlanToCard(plan)}
+                            onClick={() => {
+                                router.push(`/dashboard/plans/manage/${plan.id}`);
+                            }}
+                        />
+                    ))
+                ) : !loading && (
+                    <div className="col-span-full py-20 text-center bg-white dark:bg-slate-900 rounded-3xl border border-dashed border-gray-200 dark:border-slate-800">
+                        <div className="w-20 h-20 bg-gray-50 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <Target className="text-gray-400" size={40} />
+                        </div>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">No Active Missions</h3>
+                        <p className="text-gray-500 max-w-sm mx-auto mb-8">You haven't started any savings plans yet. Pick a verified opportunity from the Pot to start your journey.</p>
+                        <Link
+                            href="/dashboard/pot"
+                            className="text-primary font-bold hover:underline"
+                        >
+                            Explore Opportunities &rarr;
+                        </Link>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

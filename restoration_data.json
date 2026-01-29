@@ -1,0 +1,4479 @@
+[
+  {
+    "email": "fellyhappy1@gmail.com",
+    "first_name": "Felicia",
+    "last_name": "Ayara-williams",
+    "wallet_bal": 2000.0,
+    "savings": []
+  },
+  {
+    "email": "olatejuijiwoye@gmail.com",
+    "first_name": "Olateju",
+    "last_name": "Ijiwoye",
+    "wallet_bal": 1034.32,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "somto.achu5@gmail.com",
+    "first_name": "Somto",
+    "last_name": "Anayor-achu",
+    "wallet_bal": 43.06,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kenwanne@yahoo.com",
+    "first_name": "Chiemenam",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 940.1,
+    "savings": [
+      {
+        "title": "Favour Allowance",
+        "balance": 84973.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 614516.0
+      }
+    ]
+  },
+  {
+    "email": "omeifesean@gmail.com",
+    "first_name": "Sean",
+    "last_name": "Omeife",
+    "wallet_bal": 698.0,
+    "savings": [
+      {
+        "title": "Stable Ground",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "boluvic4real@yahoo.com",
+    "first_name": "Boluwatife",
+    "last_name": "Osaye",
+    "wallet_bal": 20.0,
+    "savings": [
+      {
+        "title": "Funny",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "beyon136@gmail.com",
+    "first_name": "Aya",
+    "last_name": "Uchiv",
+    "wallet_bal": 4.05,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "somtech.ng@gmail.com",
+    "first_name": "Chisom",
+    "last_name": "Umeobi",
+    "wallet_bal": 100000.0,
+    "savings": [
+      {
+        "title": "Mic mic",
+        "balance": 0.0
+      },
+      {
+        "title": "Mic11",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "agbowurotaiwo2019@yahoo.com",
+    "first_name": "Taiwo",
+    "last_name": "Agbowuro",
+    "wallet_bal": 3.0,
+    "savings": [
+      {
+        "title": "Taiwo Agbowuro",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Taiwo Business",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "aadde26@gmail.com",
+    "first_name": "Samuel ",
+    "last_name": "Ajagunna",
+    "wallet_bal": 1553.79,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sharonlise14@gmail.com",
+    "first_name": "Sharon",
+    "last_name": "Gbaje",
+    "wallet_bal": 1031.92,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ralphsmithofime2001@gmail.com",
+    "first_name": "Ralph",
+    "last_name": "Ofime",
+    "wallet_bal": 63.11,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "vicstella1@gmail.com",
+    "first_name": "Victor",
+    "last_name": "Adesanlu",
+    "wallet_bal": 402.0,
+    "savings": []
+  },
+  {
+    "email": "damilola.akinneye@stu.cu.edu.ng",
+    "first_name": "Damilola",
+    "last_name": "Akinneye",
+    "wallet_bal": 0.6,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ofaitholuwapelumi@gmail.com",
+    "first_name": "Faith",
+    "last_name": "Oladapo",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Jb - 2046 billionaire ",
+        "balance": 298.0
+      }
+    ]
+  },
+  {
+    "email": "peter.sheids@gmail.com",
+    "first_name": "Peter",
+    "last_name": "Sheidu",
+    "wallet_bal": 324.5,
+    "savings": []
+  },
+  {
+    "email": "peacedol@yahoo.com",
+    "first_name": "Peace",
+    "last_name": "Ekundayo",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 428.0
+      },
+      {
+        "title": "Future 2",
+        "balance": 726.0
+      }
+    ]
+  },
+  {
+    "email": "eseegube3@gmail.com",
+    "first_name": "Eseoghene",
+    "last_name": "Egube",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "1000 Weekly",
+        "balance": 5202.0
+      }
+    ]
+  },
+  {
+    "email": "damzigodwin@gmail.com",
+    "first_name": "Godwin",
+    "last_name": "Adams",
+    "wallet_bal": 9277.0,
+    "savings": []
+  },
+  {
+    "email": "ayomipomakinde@gmail.com",
+    "first_name": "Damilola",
+    "last_name": "Makinde",
+    "wallet_bal": 9.0,
+    "savings": [
+      {
+        "title": "Studies",
+        "balance": 1321.0
+      }
+    ]
+  },
+  {
+    "email": "tejuoshosamueldpo@gmail.com",
+    "first_name": "Adedapo",
+    "last_name": "Tejuosho",
+    "wallet_bal": 15290.0,
+    "savings": [
+      {
+        "title": "First try",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "alongejoy625@yahoo.com",
+    "first_name": "Joy",
+    "last_name": "Alonge",
+    "wallet_bal": 2740.6,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "rebeccaanugengen@gmail.com",
+    "first_name": "Rebecca",
+    "last_name": "Anugengen",
+    "wallet_bal": 10954.2,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Shoe",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "gracecherish747@gmail.com",
+    "first_name": "Grace",
+    "last_name": "Bello",
+    "wallet_bal": 2000.0,
+    "savings": []
+  },
+  {
+    "email": "kimberlyadeoti20000@gmail.com",
+    "first_name": "Kimberly ",
+    "last_name": "Adeoti",
+    "wallet_bal": 3665.65,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "wisdomteni@gmail.com",
+    "first_name": "Wisdom ",
+    "last_name": "Ughakpoteni",
+    "wallet_bal": 1148.06,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "erisonskies@gmail.com",
+    "first_name": "Eric",
+    "last_name": "Orhorhoro",
+    "wallet_bal": 4431.56,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "labaripaul@gmail.com",
+    "first_name": "Paul",
+    "last_name": "Labari",
+    "wallet_bal": 1.95,
+    "savings": []
+  },
+  {
+    "email": "teeborbz@gmail.com",
+    "first_name": "Babatunde",
+    "last_name": "Olorunhundo",
+    "wallet_bal": 1890.7,
+    "savings": []
+  },
+  {
+    "email": "amooruth11@gmail.com",
+    "first_name": "Tomilola",
+    "last_name": "Amoo",
+    "wallet_bal": 0.2,
+    "savings": [
+      {
+        "title": "Trial",
+        "balance": 0.0
+      },
+      {
+        "title": "Rum",
+        "balance": 0.0
+      },
+      {
+        "title": "Trial 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "talk2godtime@gmail.com",
+    "first_name": "Divine",
+    "last_name": "Oguejiofor",
+    "wallet_bal": 309.74,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "goody.babie@gmail.com",
+    "first_name": "Damilola",
+    "last_name": "Omolusi",
+    "wallet_bal": 1736.0,
+    "savings": []
+  },
+  {
+    "email": "ifeoluwaolutayo@gmail.com",
+    "first_name": "Ife",
+    "last_name": "Olutayo",
+    "wallet_bal": 1528.3,
+    "savings": [
+      {
+        "title": "Ife",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "funakpo.wariebi@gmail.com",
+    "first_name": "Funakpo",
+    "last_name": "Wariebi",
+    "wallet_bal": 11385.2,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ekene.ikeora@gmail.com",
+    "first_name": "Ekene",
+    "last_name": "Ikeora",
+    "wallet_bal": 3097.33,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "michaeloluwakayodesmatt@gmail.com",
+    "first_name": "Oluwakayode",
+    "last_name": "Michael",
+    "wallet_bal": 47.6,
+    "savings": []
+  },
+  {
+    "email": "kingsleywhisky@gmail.com",
+    "first_name": "Kingsley",
+    "last_name": "Oseren-whisky",
+    "wallet_bal": 1257.1,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adedamolasulaimon9@gmail.com",
+    "first_name": "Adedamola",
+    "last_name": "Sulaimon",
+    "wallet_bal": 1000.0,
+    "savings": [
+      {
+        "title": "Business tycoon",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "onyemakingsley363@yahoo.com",
+    "first_name": "Kingsley ",
+    "last_name": "Onyema",
+    "wallet_bal": 1.95,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Q",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "blessingozowara@gmail.com",
+    "first_name": "Blessing",
+    "last_name": "Ozowara",
+    "wallet_bal": 4284.13,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "joynwachukwu2109@gmail.com",
+    "first_name": "Joy",
+    "last_name": "Nwachukwu",
+    "wallet_bal": 1000.0,
+    "savings": []
+  },
+  {
+    "email": "praisechibuezeoke@gmail.com",
+    "first_name": "Praise ",
+    "last_name": "Chibuezeoke ",
+    "wallet_bal": 18.9,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "PLAN 3",
+        "balance": 0.0
+      },
+      {
+        "title": "Iphone",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "tofunmi_jiboku@yahoo.com",
+    "first_name": "Oluwatofunmi",
+    "last_name": "Jiboku",
+    "wallet_bal": 113.15,
+    "savings": [
+      {
+        "title": "January 2022",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "awolesi.ayomide2000@gmail.com",
+    "first_name": "Ayomide ",
+    "last_name": "Awolesi",
+    "wallet_bal": 1263.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Abeggi",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "olatunjiini@yahoo.com",
+    "first_name": "Inioluwa",
+    "last_name": "Olatunji",
+    "wallet_bal": 1488.14,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "upgradelimited@gmail.com",
+    "first_name": "Upgrade ",
+    "last_name": "Afiowor ",
+    "wallet_bal": 23469.0,
+    "savings": [
+      {
+        "title": "Millioniare",
+        "balance": 3049.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "lekeemma1@gmail.com",
+    "first_name": "Emmanuel ",
+    "last_name": "Adeleke ",
+    "wallet_bal": 0.7,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 3",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "menaogbebor@gmail.com",
+    "first_name": "Ejemenare",
+    "last_name": "Ogbebor",
+    "wallet_bal": 3495.27,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Risky",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adedejidotun@live.com",
+    "first_name": "Oladotun",
+    "last_name": "Adedeji",
+    "wallet_bal": 0.82,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Aza",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sarmmuellthompson@gmail.com",
+    "first_name": "Samuel",
+    "last_name": "Thompson",
+    "wallet_bal": 11.27,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "My goal",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "dammieolojede@gmail.com",
+    "first_name": "Damilola",
+    "last_name": "Olojede",
+    "wallet_bal": 88.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "moseseyo.me@gmail.com",
+    "first_name": "Moses",
+    "last_name": "Eyo",
+    "wallet_bal": 1.08,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "End Of The Year",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "olapadeoluwatobiloba09@gmail.com",
+    "first_name": "Oluwatobiloba",
+    "last_name": "Olapade",
+    "wallet_bal": 543.0,
+    "savings": [
+      {
+        "title": "Money",
+        "balance": 0.0
+      },
+      {
+        "title": "Car",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "okpabi.sammist@gmail.com",
+    "first_name": "Sampson",
+    "last_name": "Okpabi",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.22
+      }
+    ]
+  },
+  {
+    "email": "adedejidamilare88@gmail.com",
+    "first_name": "Ayotomiwa",
+    "last_name": "Adedeji",
+    "wallet_bal": 0.17,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "princerufus26@gmail.com",
+    "first_name": "Prince",
+    "last_name": "Rufus",
+    "wallet_bal": 10077.89,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "a.okezo28@gmail.com",
+    "first_name": "Okechukwu",
+    "last_name": "Nwachukwu",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 15823.1
+      }
+    ]
+  },
+  {
+    "email": "fumsamuel@gmail.com",
+    "first_name": "Kenneth ",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 646.8,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 19303.0
+      }
+    ]
+  },
+  {
+    "email": "enangjoseph92@gmail.com",
+    "first_name": "Joseph",
+    "last_name": "Enang",
+    "wallet_bal": 44.3,
+    "savings": [
+      {
+        "title": "Decade independence",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "pharmnneka@gmail.com",
+    "first_name": "Nneka",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 322.6,
+    "savings": [
+      {
+        "title": "Iwundu",
+        "balance": 14287.0
+      },
+      {
+        "title": "Retirement Plan",
+        "balance": 2206.0
+      }
+    ]
+  },
+  {
+    "email": "mariambeauty47@gmail.com",
+    "first_name": "Mariam",
+    "last_name": "Oseni",
+    "wallet_bal": 34.0,
+    "savings": [
+      {
+        "title": "Emmanuel",
+        "balance": 0.0
+      },
+      {
+        "title": "Null",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chikekennedy2@gmail.com",
+    "first_name": "Kennedy",
+    "last_name": "Onyenankeya",
+    "wallet_bal": 52.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 1317.49
+      },
+      {
+        "title": "Build House In Two Years",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ogbogoro.manifest@gmail.com",
+    "first_name": "Manifest",
+    "last_name": "Ogbogoro",
+    "wallet_bal": 2451.03,
+    "savings": []
+  },
+  {
+    "email": "simplezeek@gmail.com",
+    "first_name": "Isaac",
+    "last_name": "Ayeni",
+    "wallet_bal": 46.51,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adigundamola16@gmail.com",
+    "first_name": "Adigun",
+    "last_name": "Damola",
+    "wallet_bal": 76.74,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Dam",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "lindaobi30@gmail.com",
+    "first_name": "Linda",
+    "last_name": "Obi",
+    "wallet_bal": 1158.48,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "inorigrace@gmail.com",
+    "first_name": "Grace",
+    "last_name": "Johnson",
+    "wallet_bal": 9817.4,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "helen_oputa@yahoo.com",
+    "first_name": "Nkiru helen",
+    "last_name": "Oputa",
+    "wallet_bal": 15518.46,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "omotolaadebayo12@gmail.com",
+    "first_name": "Omotola",
+    "last_name": "Adebayo",
+    "wallet_bal": 0.5,
+    "savings": [
+      {
+        "title": "Mid Risk",
+        "balance": 0.0
+      },
+      {
+        "title": "Ibadan Trip",
+        "balance": 0.0
+      },
+      {
+        "title": "Reboot Camp Savings",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "dnewleely001@yahoo.com",
+    "first_name": "Lydia",
+    "last_name": "Amos",
+    "wallet_bal": 8961.63,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "lisaogbechie@gmail.com",
+    "first_name": "Princess",
+    "last_name": "Ogbechie",
+    "wallet_bal": 24.0,
+    "savings": [
+      {
+        "title": "House",
+        "balance": 68.0
+      }
+    ]
+  },
+  {
+    "email": "titi.nathaniel@gmail.com",
+    "first_name": "Titilope",
+    "last_name": "Nathaniel",
+    "wallet_bal": 112269.4,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "akpanemmanuel269@gmail.com",
+    "first_name": "Emmanuel",
+    "last_name": "Akpan",
+    "wallet_bal": 2578.5,
+    "savings": [
+      {
+        "title": "Graduation",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "obykudos@hotmail.com",
+    "first_name": "Obiageli",
+    "last_name": "Okudoh",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 250000.0
+      },
+      {
+        "title": "Aggr",
+        "balance": 200000.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 70496.0
+      },
+      {
+        "title": "Cons",
+        "balance": 400000.0
+      }
+    ]
+  },
+  {
+    "email": "favynath@gmail.com",
+    "first_name": "Toluyemi",
+    "last_name": "Nathaniel",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "The Ark",
+        "balance": 0.0
+      },
+      {
+        "title": "Invest",
+        "balance": 19551.0
+      },
+      {
+        "title": "The Blessings",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ihejirikaodinakachi@gmail.com",
+    "first_name": "Odinakachi",
+    "last_name": "Ihejirika",
+    "wallet_bal": 4067.19,
+    "savings": [
+      {
+        "title": "Convocation Plan",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire a decade",
+        "balance": 352.84
+      }
+    ]
+  },
+  {
+    "email": "tuwasedavid@gmail.com",
+    "first_name": "David",
+    "last_name": "Tuwase",
+    "wallet_bal": 69.9,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "okuazungideon@gmail.com",
+    "first_name": "Gideon",
+    "last_name": "Okuazun",
+    "wallet_bal": 1106.36,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "pauljoshuauba@gmail.com",
+    "first_name": "Paul",
+    "last_name": "Joshua",
+    "wallet_bal": 122.0,
+    "savings": [
+      {
+        "title": "My toyota corolla sport plan",
+        "balance": 0.0
+      },
+      {
+        "title": "2 million bubbles",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "victoreleven11@gmail.com",
+    "first_name": "Victor",
+    "last_name": "Olorunkoya",
+    "wallet_bal": 1207.13,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "danlewa2@gmail.com",
+    "first_name": "Daniel",
+    "last_name": "Omolewa",
+    "wallet_bal": 990.0,
+    "savings": [
+      {
+        "title": "Investments",
+        "balance": 40953.0
+      }
+    ]
+  },
+  {
+    "email": "nwachukwumiracle68@gmail.com",
+    "first_name": "Miracle",
+    "last_name": "Nwachukwu",
+    "wallet_bal": 317.29,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "karlakayy584@gmail.com",
+    "first_name": "Karla alo ",
+    "last_name": "Abua",
+    "wallet_bal": 1207.13,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "jimohadeolu@gmail.com",
+    "first_name": "Adeoluwa",
+    "last_name": "Jimoh",
+    "wallet_bal": 1144.8,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "omobolanle.salami@stu.cu.edu.ng",
+    "first_name": " omobolanle ",
+    "last_name": "Salami",
+    "wallet_bal": 2118.36,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "modupeadeola823@gmail.com",
+    "first_name": "Modupeadeola",
+    "last_name": "Yemi",
+    "wallet_bal": 2.0,
+    "savings": [
+      {
+        "title": "Modupeadeola",
+        "balance": 0.0
+      },
+      {
+        "title": "Modupe",
+        "balance": 0.0
+      },
+      {
+        "title": "Saving culture 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Saving culture",
+        "balance": 60.0
+      }
+    ]
+  },
+  {
+    "email": "maestromoha47@gmail.com",
+    "first_name": "Muhammad fadlullah",
+    "last_name": "Sulayman",
+    "wallet_bal": 796.3,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "seyiandu11@gmail.com",
+    "first_name": "Oluwaseyifunmi",
+    "last_name": "Andu",
+    "wallet_bal": 4134.0,
+    "savings": [
+      {
+        "title": "Making my first million",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sophia.ifezue@gmail.com",
+    "first_name": "Sophia",
+    "last_name": "Ifezue",
+    "wallet_bal": 13.89,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "godsongrace25@gmail.com",
+    "first_name": "Samuel godson ",
+    "last_name": "Jenkson ",
+    "wallet_bal": 480.28,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "jp438946@gmail.com",
+    "first_name": "Prince",
+    "last_name": "Ishie-johnson",
+    "wallet_bal": 261.51,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 4506.23
+      }
+    ]
+  },
+  {
+    "email": "jokafor343@gmail.com",
+    "first_name": "Jane",
+    "last_name": "Okafor ",
+    "wallet_bal": 56.26,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "bonfrey71@gmail.com",
+    "first_name": "Bonfrey",
+    "last_name": "Jacobs",
+    "wallet_bal": 111.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "elisheba.ham-ola@stu.cu.edu.ng",
+    "first_name": "Elisheba",
+    "last_name": "Ham-ola",
+    "wallet_bal": 0.37,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Svings",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "okehamason47@gmail.com",
+    "first_name": "Ama  ",
+    "last_name": "Okeh",
+    "wallet_bal": 0.08,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Company",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "konyefapaul@gmail.com",
+    "first_name": "Paul",
+    "last_name": "Konyefa",
+    "wallet_bal": 13.7,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sethtimi92@gmail.com",
+    "first_name": "Seth",
+    "last_name": "Amuche",
+    "wallet_bal": 11.0,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 663.41
+      }
+    ]
+  },
+  {
+    "email": "jayoade16@gmail.com",
+    "first_name": "Joel",
+    "last_name": "Oludele",
+    "wallet_bal": 42.0,
+    "savings": [
+      {
+        "title": "After Graduation Fund",
+        "balance": 0.0
+      },
+      {
+        "title": "1000naira Weekly",
+        "balance": 2099.0
+      }
+    ]
+  },
+  {
+    "email": "mijay360@gmail.com",
+    "first_name": "Matthew ",
+    "last_name": "Nana",
+    "wallet_bal": 5.0,
+    "savings": []
+  },
+  {
+    "email": "ozigboebere30@gmail.com",
+    "first_name": "Ebere",
+    "last_name": "Ozigbo",
+    "wallet_bal": 170.12,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "john_orok5@yahoo.com",
+    "first_name": "John",
+    "last_name": "Orok",
+    "wallet_bal": 87.2,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "aregbestimi@gmail.com",
+    "first_name": "Oluwatimilehin",
+    "last_name": "Aregbesola",
+    "wallet_bal": 422.31,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "deborahelabor930@gmail.com",
+    "first_name": "Deborah",
+    "last_name": "Elabor",
+    "wallet_bal": 1.22,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Hope",
+        "balance": 0.2
+      }
+    ]
+  },
+  {
+    "email": "ezeokpokc@gmail.com",
+    "first_name": "Kenechukwu",
+    "last_name": "Ezeokpo",
+    "wallet_bal": 41.49,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ifaloyetosin@gmail.com",
+    "first_name": "Oluwatosin",
+    "last_name": "Ifaloye",
+    "wallet_bal": 2250.84,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "preciouskay3214@gmail.com",
+    "first_name": "Precious",
+    "last_name": "Tiamiyu",
+    "wallet_bal": 1.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Tryout",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "saloagada@gmail.com",
+    "first_name": "Salome",
+    "last_name": "Ekwueme",
+    "wallet_bal": 96.0,
+    "savings": []
+  },
+  {
+    "email": "esli.ham.ola@gmail.com",
+    "first_name": "Esli",
+    "last_name": "Ham-ola",
+    "wallet_bal": 1504.42,
+    "savings": [
+      {
+        "title": "Emle",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "harku.emex2@gmail.com",
+    "first_name": "Chukwuemerie",
+    "last_name": "Akujieze",
+    "wallet_bal": 1641.94,
+    "savings": []
+  },
+  {
+    "email": "umarabdul791@gmail.com",
+    "first_name": "Umar aminu",
+    "last_name": "Mohammed",
+    "wallet_bal": 1072.0,
+    "savings": [
+      {
+        "title": "Dreams",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ochukoesiem@gmail.com",
+    "first_name": "Ochuko",
+    "last_name": "Esiemunobo",
+    "wallet_bal": 775.5,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "toun288@yahoo.co.uk",
+    "first_name": "Temitope",
+    "last_name": "Ajayi",
+    "wallet_bal": 561.92,
+    "savings": [
+      {
+        "title": "Esther",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "jelili.oyelade@gmail.com",
+    "first_name": "Olanrewaju",
+    "last_name": "Oyelade",
+    "wallet_bal": 224.37,
+    "savings": [
+      {
+        "title": "Peculiar",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "babajideabiola@gmail.com",
+    "first_name": "Abiola",
+    "last_name": "Babajide",
+    "wallet_bal": 1123.85,
+    "savings": [
+      {
+        "title": "Anjola",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sade.adegboye@gmail.com",
+    "first_name": "Folasade",
+    "last_name": "Adegboye",
+    "wallet_bal": 1209.85,
+    "savings": [
+      {
+        "title": "Omotara",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kevinsomto74@gmail.com",
+    "first_name": "Kevin",
+    "last_name": "Chiebuka",
+    "wallet_bal": 275.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kayocara@gmail.com",
+    "first_name": "Titilayo",
+    "last_name": "Akanle",
+    "wallet_bal": 1098.85,
+    "savings": [
+      {
+        "title": "David",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "glorygodspeace@gmail.com",
+    "first_name": "Glory",
+    "last_name": "God",
+    "wallet_bal": 4497.0,
+    "savings": [
+      {
+        "title": "Project 500K",
+        "balance": 0.0
+      },
+      {
+        "title": "Project daring profit",
+        "balance": 0.0
+      },
+      {
+        "title": "The falcon ",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ezefranklin2@gmail.com",
+    "first_name": "Franklyn",
+    "last_name": "Eze",
+    "wallet_bal": 1084.06,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ayotwice@gmail.com",
+    "first_name": "Ayodeji",
+    "last_name": "Alabi",
+    "wallet_bal": 461.79,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Goal",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "justicenefe@gmail.com",
+    "first_name": "Justice",
+    "last_name": "Nefe",
+    "wallet_bal": 1749.98,
+    "savings": [
+      {
+        "title": "Basic",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "enalexy@gmail.com",
+    "first_name": "Alexander",
+    "last_name": "Enabulele",
+    "wallet_bal": 561.92,
+    "savings": [
+      {
+        "title": "Munachi",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "triumphant.ololade@lmu.edu.ng",
+    "first_name": " ololade precious",
+    "last_name": "Triumphant",
+    "wallet_bal": 1981.0,
+    "savings": [
+      {
+        "title": "Savings",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chifranek@gmail.com",
+    "first_name": "Chibueze",
+    "last_name": "Ekeh",
+    "wallet_bal": 30.0,
+    "savings": [
+      {
+        "title": "Binary trading",
+        "balance": 0.0
+      },
+      {
+        "title": "Trading",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ilabijadavid@gmail.com",
+    "first_name": "David",
+    "last_name": "Ilabija",
+    "wallet_bal": 100.3,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sharondedekson@gmail.com",
+    "first_name": "Sharon",
+    "last_name": "Dedeke",
+    "wallet_bal": 5729.0,
+    "savings": []
+  },
+  {
+    "email": "echukwurah99@gmail.com",
+    "first_name": "Ekene",
+    "last_name": "Chukwurah",
+    "wallet_bal": 82.02,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "benjamin.kelani@stu.cu.edu.ng",
+    "first_name": "Benjamin",
+    "last_name": "Kelani",
+    "wallet_bal": 8773.03,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kelenna 26@investnaira.me",
+    "first_name": "Kelenna",
+    "last_name": "Uche",
+    "wallet_bal": 1000.0,
+    "savings": []
+  },
+  {
+    "email": "taiwosanni53@gmail.com",
+    "first_name": "Sanni",
+    "last_name": "Taiwo",
+    "wallet_bal": 10.0,
+    "savings": [
+      {
+        "title": "Operation increase",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire a decade",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "vickiinee@gmail.com",
+    "first_name": "Victory",
+    "last_name": "Neebee",
+    "wallet_bal": 25.0,
+    "savings": [
+      {
+        "title": "First Time",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "boluwatifejoshua1@gmail.com",
+    "first_name": "Tobi",
+    "last_name": "Omotayo",
+    "wallet_bal": 433.61,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "edwardjoshua52@gmail.com",
+    "first_name": "Edward ",
+    "last_name": "Joshua",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Future nest ",
+        "balance": 13117.0
+      }
+    ]
+  },
+  {
+    "email": "boluwatifeodunlami3@gmail.com",
+    "first_name": "Boluwatife",
+    "last_name": "Ajayi",
+    "wallet_bal": 2.0,
+    "savings": [
+      {
+        "title": "\ud83d\ude0f\ud83d\ude14",
+        "balance": 19.0
+      }
+    ]
+  },
+  {
+    "email": "ayoola.t.adesina@gmail.com",
+    "first_name": "Ayoola",
+    "last_name": "Adesina ",
+    "wallet_bal": 7.0,
+    "savings": [
+      {
+        "title": "Christmas",
+        "balance": 0.0
+      },
+      {
+        "title": "Me",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ajifafaith@gmail.com",
+    "first_name": "Faith",
+    "last_name": "Sani",
+    "wallet_bal": 597.0,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kelechivivian01@gmail.com",
+    "first_name": "Kelechi",
+    "last_name": "Okeke",
+    "wallet_bal": 2270.0,
+    "savings": [
+      {
+        "title": "Excess",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "01mofelowo@gmail.com",
+    "first_name": "Mofetoluwa",
+    "last_name": "Adelowo",
+    "wallet_bal": 500.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kingdavid.28.kc@gmail.com",
+    "first_name": "Kingdavid",
+    "last_name": "Charles",
+    "wallet_bal": 608.0,
+    "savings": [
+      {
+        "title": "My Four Year Investment",
+        "balance": 85.0
+      },
+      {
+        "title": "Millionaire a decade",
+        "balance": 29715.0
+      }
+    ]
+  },
+  {
+    "email": "prosperokoroafor7@outlook.com",
+    "first_name": "Prosper",
+    "last_name": "Okoroafor",
+    "wallet_bal": 16.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "david.omole@covenantuniversity.edu.ng",
+    "first_name": "Omole",
+    "last_name": "David",
+    "wallet_bal": 1123.85,
+    "savings": [
+      {
+        "title": "Ikeoluwa",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "tobipatolu@gmail.com",
+    "first_name": "Oluwatobi",
+    "last_name": "Odumosu",
+    "wallet_bal": 152.0,
+    "savings": []
+  },
+  {
+    "email": "otunkoanthony53@gmail.com",
+    "first_name": "Okafor",
+    "last_name": "Anthony",
+    "wallet_bal": 5.0,
+    "savings": [
+      {
+        "title": "Business",
+        "balance": 0.0
+      },
+      {
+        "title": "Economy",
+        "balance": 0.0
+      },
+      {
+        "title": "Profits",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "zubytravels@gmail.com",
+    "first_name": "Onyedikachi",
+    "last_name": "Nwoke",
+    "wallet_bal": 16.4,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 4754.0
+      }
+    ]
+  },
+  {
+    "email": "pelubanki@gmail.com",
+    "first_name": "Oluwapelumi",
+    "last_name": "Bankole",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionier",
+        "balance": 3814.0
+      }
+    ]
+  },
+  {
+    "email": "ibitolabegi@gmail.com",
+    "first_name": "Ibitola",
+    "last_name": "Olagbegi",
+    "wallet_bal": 300.0,
+    "savings": [
+      {
+        "title": "Fun",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "akinyemiemmanuel709@gmail.com",
+    "first_name": "Akinyemi",
+    "last_name": "Ayodeji emmanuel",
+    "wallet_bal": 86.0,
+    "savings": [
+      {
+        "title": "New Phone",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "rachaeloladoye2019@gmail.com",
+    "first_name": "Rachael",
+    "last_name": "Oladoye",
+    "wallet_bal": 1000.0,
+    "savings": []
+  },
+  {
+    "email": "invest@investnaira.com",
+    "first_name": "Invest",
+    "last_name": "Naira",
+    "wallet_bal": 4906.0,
+    "savings": []
+  },
+  {
+    "email": "akinkunmitolulope23@gmail.com",
+    "first_name": " toluwalope ",
+    "last_name": "Akinkunmi",
+    "wallet_bal": 1114.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 1187.0
+      }
+    ]
+  },
+  {
+    "email": "ikecikechukwuogozi@gmail.com",
+    "first_name": "Ogozi",
+    "last_name": "Ikechukwu",
+    "wallet_bal": 43.0,
+    "savings": [
+      {
+        "title": "Ikechukwuogozi",
+        "balance": 0.0
+      },
+      {
+        "title": "Earn",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sarahajao312@gmail.com",
+    "first_name": "Sarah",
+    "last_name": "Ajao",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "akinwunmi451@gmail.com",
+    "first_name": "Esther olusola",
+    "last_name": "Akinwunmi",
+    "wallet_bal": 523.95,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "basseydaniel86@gmail.com",
+    "first_name": "Daniel",
+    "last_name": "Bassey",
+    "wallet_bal": 4.3,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "amessinouabraham@gmail.com",
+    "first_name": "Abraham",
+    "last_name": "Amessinou",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Personal Savings",
+        "balance": 5382.0
+      }
+    ]
+  },
+  {
+    "email": "kingdavidsobola11@gmail.com",
+    "first_name": "King-david",
+    "last_name": "Sobola",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 771.0
+      }
+    ]
+  },
+  {
+    "email": "egerewissy313@gmail.com",
+    "first_name": "Wisdom",
+    "last_name": "Egere",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "ogechiezea111@gmail.com",
+    "first_name": "Ezea",
+    "last_name": "Ogechi",
+    "wallet_bal": 500.0,
+    "savings": [
+      {
+        "title": "New car",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "golleyexcel@gmail.com",
+    "first_name": "Oghenemine",
+    "last_name": "Golley",
+    "wallet_bal": 2224.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "amaka.amuwa@gmail.com",
+    "first_name": "Ndidiamaka",
+    "last_name": "Amuwa",
+    "wallet_bal": 21.0,
+    "savings": []
+  },
+  {
+    "email": "isaiahjohn222@gmail.com",
+    "first_name": "Isaiah",
+    "last_name": "John",
+    "wallet_bal": 2000.0,
+    "savings": [
+      {
+        "title": "Business",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "terngukater@gmail.com",
+    "first_name": "Kater",
+    "last_name": "Terngu",
+    "wallet_bal": 90.0,
+    "savings": [
+      {
+        "title": "Get it back double",
+        "balance": 0.0
+      },
+      {
+        "title": "Education",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "msheliajudith@gmail.com",
+    "first_name": "Judith",
+    "last_name": "James",
+    "wallet_bal": 24.0,
+    "savings": [
+      {
+        "title": "Moneybag ",
+        "balance": 0.0
+      },
+      {
+        "title": "Schoolfunds",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "aoluwatosin41@yahoo.com",
+    "first_name": "Oluwatosin",
+    "last_name": "Adeniyi",
+    "wallet_bal": 87.0,
+    "savings": [
+      {
+        "title": "Double ",
+        "balance": 0.0
+      },
+      {
+        "title": "Future",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ganiu936@gmail.com",
+    "first_name": "Ganiyu ",
+    "last_name": "Kuranga ",
+    "wallet_bal": 1.0,
+    "savings": [
+      {
+        "title": "Future relief",
+        "balance": 2525.0
+      }
+    ]
+  },
+  {
+    "email": "henryagomtor100@gmail.com",
+    "first_name": "Henry",
+    "last_name": "Agom-tor",
+    "wallet_bal": 100.0,
+    "savings": [
+      {
+        "title": "Operation X",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "barilebu@gmail.com",
+    "first_name": "Barilebu",
+    "last_name": "Nuka-nwikpasi",
+    "wallet_bal": 5932.0,
+    "savings": [
+      {
+        "title": "My Money ",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "revhamola@yahoo.co.uk",
+    "first_name": "Ham",
+    "last_name": "Ola",
+    "wallet_bal": 0.7,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "bobbyumoren@yahoo.com",
+    "first_name": "Ekemini",
+    "last_name": "Umoren",
+    "wallet_bal": 500.0,
+    "savings": []
+  },
+  {
+    "email": "olasluvers@yahoo.co.uk",
+    "first_name": "Wasiu",
+    "last_name": "Usman",
+    "wallet_bal": 0.31,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "mundiwhyte@yahoo.com",
+    "first_name": "Sampson",
+    "last_name": "Worlu",
+    "wallet_bal": 71.69,
+    "savings": []
+  },
+  {
+    "email": "will.f.a667@gmail.com",
+    "first_name": "William",
+    "last_name": "Amanabo",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "eleana.diadem@gmail.com",
+    "first_name": "Eleana-diadem",
+    "last_name": "Akpan",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "debbyakinfesola@gmail.com",
+    "first_name": "Oluwayemisi",
+    "last_name": "Akinfesola",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "nsikak.frank70@gmail.com",
+    "first_name": "Nsikakabasi",
+    "last_name": "Ekanem",
+    "wallet_bal": 800.0,
+    "savings": [
+      {
+        "title": "Art",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chuksieovo@gmail.com",
+    "first_name": "Chukwudubem ",
+    "last_name": "Ezeagwu",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "timmyondbeat@gmail.com",
+    "first_name": "Oluwatimilehin",
+    "last_name": "Aina",
+    "wallet_bal": 1869.82,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "elegbedepreciousjoshuaayo@gmail.com",
+    "first_name": "Precious-joshua",
+    "last_name": "Elegbede",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "kennynoun@gmail.com",
+    "first_name": "Ikpogho",
+    "last_name": "Kenny",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "isaacadoga85@gmail.com",
+    "first_name": "Isaac",
+    "last_name": "Adoga",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "ogechukwuelekwa@gmail.com",
+    "first_name": "Oge",
+    "last_name": "Elekwa",
+    "wallet_bal": 1738.0,
+    "savings": [
+      {
+        "title": "Graduate Funds",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "erioluwaboluwatife82@gmail.com",
+    "first_name": "Erioluwa ",
+    "last_name": "Boluwatife ",
+    "wallet_bal": 3.0,
+    "savings": [
+      {
+        "title": "Richer",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "samuel.aghogho@stu.cu.edu.ng",
+    "first_name": "Samuel",
+    "last_name": "Aghogho",
+    "wallet_bal": 101.0,
+    "savings": [
+      {
+        "title": "The531spark",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "jeremiaholoyede20@gmail.com",
+    "first_name": "Jeremiah",
+    "last_name": "Oloyede",
+    "wallet_bal": 10596.0,
+    "savings": [
+      {
+        "title": "Personal sontin",
+        "balance": 0.0
+      },
+      {
+        "title": "Personal sontin 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "gabrielyawe11@gmail.com",
+    "first_name": "Gabriel",
+    "last_name": "Yawe",
+    "wallet_bal": 986.0,
+    "savings": [
+      {
+        "title": "Investments",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "okpalubatochi@gmail.com",
+    "first_name": "Tochi",
+    "last_name": "Okpaluba",
+    "wallet_bal": 650.7,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 23433.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "solo2000abu@gmail.com",
+    "first_name": "Solomon",
+    "last_name": "Abu",
+    "wallet_bal": 209.26,
+    "savings": [
+      {
+        "title": "Growth",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "abramkene@gmail.com",
+    "first_name": "Kenechukwu",
+    "last_name": "Okoli",
+    "wallet_bal": 5234.26,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Billioniare",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "shalomaboderin@gmail.com",
+    "first_name": "Shalom",
+    "last_name": "Aboderin",
+    "wallet_bal": 1837.56,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "exywal@yahoo.com",
+    "first_name": "Olawale",
+    "last_name": "Adewara",
+    "wallet_bal": 102.52,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "airamuche@gmail.com",
+    "first_name": "Amuche",
+    "last_name": "Okey-eboh",
+    "wallet_bal": 4328.03,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Retirement",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "d3a2n6@gmail.com",
+    "first_name": "Daniel",
+    "last_name": "Okoi",
+    "wallet_bal": 78.0,
+    "savings": [
+      {
+        "title": "More Money",
+        "balance": 1642.0
+      }
+    ]
+  },
+  {
+    "email": "egundebitolu@yahoo.com",
+    "first_name": "Tolulope",
+    "last_name": "Egundebi",
+    "wallet_bal": 0.26,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "promiseoffor89@gmail.com",
+    "first_name": "Promise",
+    "last_name": "Offor",
+    "wallet_bal": 500.0,
+    "savings": []
+  },
+  {
+    "email": "nsikakisrael27@gmail.com",
+    "first_name": "Israel",
+    "last_name": "Sampson",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "pauligwedinma@gmail.com",
+    "first_name": "Chukwukamadu",
+    "last_name": "Igwedinma",
+    "wallet_bal": 24.3,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "amakalateef8@gmail.com",
+    "first_name": "Amaka",
+    "last_name": "Lateef ",
+    "wallet_bal": 1189.0,
+    "savings": [
+      {
+        "title": "School fees ",
+        "balance": 0.0
+      },
+      {
+        "title": "Long term",
+        "balance": 43828.0
+      }
+    ]
+  },
+  {
+    "email": "bankoledavid506@gmail.com",
+    "first_name": "David",
+    "last_name": "Bankole",
+    "wallet_bal": 37.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ojooluwanifemii@gmail.com",
+    "first_name": "Oluwanifemi",
+    "last_name": "Ojo",
+    "wallet_bal": 1264.0,
+    "savings": []
+  },
+  {
+    "email": "titilayo.igwe@gmail.com",
+    "first_name": "Titilayo",
+    "last_name": "Igwe",
+    "wallet_bal": 351734.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "naomimosope@gmail.com",
+    "first_name": "Mosopefoluwa naomi",
+    "last_name": "Akinleye",
+    "wallet_bal": 29.0,
+    "savings": [
+      {
+        "title": "Just Money",
+        "balance": 858.0
+      }
+    ]
+  },
+  {
+    "email": "afiblessingoyigoja@gmail.com",
+    "first_name": "Blessing",
+    "last_name": "Afi",
+    "wallet_bal": 15.9,
+    "savings": [
+      {
+        "title": "Market",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 380.6
+      }
+    ]
+  },
+  {
+    "email": "adewaleabbey.as@gmail.com",
+    "first_name": "Adewale",
+    "last_name": "Sanusi",
+    "wallet_bal": 1000.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "afiahebron@yahoo.com",
+    "first_name": "Hebron",
+    "last_name": "Afia",
+    "wallet_bal": 310.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chukwufagbenro@gmail.com",
+    "first_name": "Patrick",
+    "last_name": "Fagbenro",
+    "wallet_bal": 3.75,
+    "savings": [
+      {
+        "title": "Plan",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "owolabiyusluv29@gmail.com",
+    "first_name": "Owolabi ",
+    "last_name": "Yusuf ",
+    "wallet_bal": 1.0,
+    "savings": []
+  },
+  {
+    "email": "ezekwemnne@yahoo.com",
+    "first_name": "Nnenna",
+    "last_name": "Ezeoke",
+    "wallet_bal": 387.1,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 25717.0
+      }
+    ]
+  },
+  {
+    "email": "benjamineffiong124@gmail.com",
+    "first_name": "Benjamin",
+    "last_name": "Effiong",
+    "wallet_bal": 5.58,
+    "savings": [
+      {
+        "title": "Solar Investments",
+        "balance": 0.0
+      },
+      {
+        "title": "Happiness Wealth",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "isanazirumuhammad4@gmail.com",
+    "first_name": "Isa",
+    "last_name": "Naziru muhammad ",
+    "wallet_bal": 105.0,
+    "savings": []
+  },
+  {
+    "email": "sambayo150@gmail.com",
+    "first_name": "Adebayo",
+    "last_name": "Samuel",
+    "wallet_bal": 3268.0,
+    "savings": [
+      {
+        "title": "First goal",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "princehottline@gmail.com",
+    "first_name": "Ayomide",
+    "last_name": "Moses",
+    "wallet_bal": 56.0,
+    "savings": []
+  },
+  {
+    "email": "a.abiona@yahoo.com",
+    "first_name": "Abiodun",
+    "last_name": "Abiona",
+    "wallet_bal": 2.0,
+    "savings": []
+  },
+  {
+    "email": "tglobalservice2020@gmail.com",
+    "first_name": "Titus",
+    "last_name": "Afolabi",
+    "wallet_bal": 247.0,
+    "savings": [
+      {
+        "title": "Feeding",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "princelucasmelody2000@gmail.com",
+    "first_name": "Segs",
+    "last_name": "Prince",
+    "wallet_bal": 105.0,
+    "savings": [
+      {
+        "title": "Rich",
+        "balance": 0.0
+      },
+      {
+        "title": "Money",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ibeaustin13@gmail.com",
+    "first_name": "Uche",
+    "last_name": "Ibe",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Austin",
+        "balance": 0.0
+      },
+      {
+        "title": "1000 Weekly",
+        "balance": 4214.0
+      }
+    ]
+  },
+  {
+    "email": "bobolaomirin@gmail.com",
+    "first_name": "Omolade",
+    "last_name": "Omirin",
+    "wallet_bal": 939.0,
+    "savings": [
+      {
+        "title": "Save",
+        "balance": 6729.0
+      }
+    ]
+  },
+  {
+    "email": "samsongift21@gmail.com",
+    "first_name": "Samson",
+    "last_name": "Gift",
+    "wallet_bal": 1077.0,
+    "savings": [
+      {
+        "title": "Future",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adamuabdullaziz85@gmail.com",
+    "first_name": "Abdullaziz",
+    "last_name": "Adamu",
+    "wallet_bal": 79.0,
+    "savings": [
+      {
+        "title": "Operation",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "isaacakinfe04@gmail.com",
+    "first_name": "Akinfe ",
+    "last_name": "Isaac",
+    "wallet_bal": 53.0,
+    "savings": []
+  },
+  {
+    "email": "aumarusman4@gmail.com",
+    "first_name": "Alhajiumar",
+    "last_name": "Usman",
+    "wallet_bal": 49.0,
+    "savings": [
+      {
+        "title": "Itz_pharuq",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "tanip48006@mailrnl.com",
+    "first_name": "Sewar",
+    "last_name": "Darius",
+    "wallet_bal": 25.0,
+    "savings": []
+  },
+  {
+    "email": "ngozi.okodua@gmail.com",
+    "first_name": "Ngozi",
+    "last_name": "Henry-okodua",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Take care of myself & children",
+        "balance": 1140874.0
+      }
+    ]
+  },
+  {
+    "email": "owolabiopeyemi98@gmail.com",
+    "first_name": "Owolabi",
+    "last_name": "Joshua",
+    "wallet_bal": 1100.0,
+    "savings": [
+      {
+        "title": "Student",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "deebaba265@gmail.com",
+    "first_name": "Daniel",
+    "last_name": "Omotayo ",
+    "wallet_bal": 157.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "tripletrinity35@yahoo.com",
+    "first_name": "Trinity",
+    "last_name": "Victor",
+    "wallet_bal": 210.0,
+    "savings": []
+  },
+  {
+    "email": "adekunleakanbi05@gmail.com",
+    "first_name": "Akanbi",
+    "last_name": "Adekunle",
+    "wallet_bal": 12.0,
+    "savings": [
+      {
+        "title": "Christmas",
+        "balance": 0.0
+      },
+      {
+        "title": "Bussiness",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "abraham1kevin@gmail.com",
+    "first_name": "Abraham",
+    "last_name": "Abraham",
+    "wallet_bal": 1080.0,
+    "savings": [
+      {
+        "title": "Test",
+        "balance": 0.0
+      },
+      {
+        "title": "Rain",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chidi65@investnaira.me",
+    "first_name": "Chidi",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "victor89@investnaira.me",
+    "first_name": "Victor",
+    "last_name": "Abiona",
+    "wallet_bal": 202.0,
+    "savings": []
+  },
+  {
+    "email": "ezeebube5@gmail.com",
+    "first_name": "Ebubechi",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 2685.0,
+    "savings": [
+      {
+        "title": "Chiditahe",
+        "balance": 813.92
+      },
+      {
+        "title": "Testib",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "A Million",
+        "balance": 342500.0
+      }
+    ]
+  },
+  {
+    "email": "yemiatkins@yahoo.com",
+    "first_name": "Akintunde",
+    "last_name": "Yemi",
+    "wallet_bal": 2000.0,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "echibugwum@gmail.com",
+    "first_name": "Chibugwum",
+    "last_name": "Ezenwanne",
+    "wallet_bal": 9418.0,
+    "savings": [
+      {
+        "title": "A Millionaire A Decade",
+        "balance": 265420.0
+      }
+    ]
+  },
+  {
+    "email": "chinazo.nnamani@covenantuniversity.edu.ng",
+    "first_name": "Chinazo",
+    "last_name": "Nnamani",
+    "wallet_bal": 549.92,
+    "savings": [
+      {
+        "title": "Elisabeth",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "eseegube@gmail.com",
+    "first_name": "Ese",
+    "last_name": "Egube",
+    "wallet_bal": 0.4,
+    "savings": []
+  },
+  {
+    "email": "meis996@yahoo.com",
+    "first_name": "James",
+    "last_name": "Francis",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Isme",
+        "balance": 4886.0
+      },
+      {
+        "title": "Conservative 1",
+        "balance": 0.0
+      },
+      {
+        "title": "James Francis",
+        "balance": 0.0
+      },
+      {
+        "title": "Meis",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "uzohoprince@gmail.com",
+    "first_name": "Prince",
+    "last_name": "Uzoho",
+    "wallet_bal": 100.0,
+    "savings": [
+      {
+        "title": "Iphone",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "nwodoephraim3@gmail.com",
+    "first_name": "Ephraim",
+    "last_name": "Nwodo",
+    "wallet_bal": 15.0,
+    "savings": [
+      {
+        "title": "Make Money",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "timilehinadeyi@gmail.com",
+    "first_name": "Timilehin",
+    "last_name": "Adeyi",
+    "wallet_bal": 1132.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "maah.chigozie@yahoo.com",
+    "first_name": "Chigozie",
+    "last_name": "Maah",
+    "wallet_bal": 1128.0,
+    "savings": [
+      {
+        "title": "Feeding",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "joelbee911@gmail.com",
+    "first_name": "Joel",
+    "last_name": "Yakubu",
+    "wallet_bal": 67.0,
+    "savings": [
+      {
+        "title": "Beeflex",
+        "balance": 1067.0
+      }
+    ]
+  },
+  {
+    "email": "ebuntwenty@yahoo.com",
+    "first_name": "Ebun",
+    "last_name": "Oluwatuyi",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Keep",
+        "balance": 1291.0
+      }
+    ]
+  },
+  {
+    "email": "busayoajao@gmail.com",
+    "first_name": "Busayo",
+    "last_name": "Ajao",
+    "wallet_bal": 15238.2,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "bimbola.wolaaina@gmail.com",
+    "first_name": "Abimbola",
+    "last_name": "Aina",
+    "wallet_bal": 0.1,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Daniella Wola-aina",
+        "balance": 13107.0
+      },
+      {
+        "title": "Deborah Wola-aina",
+        "balance": 13107.0
+      },
+      {
+        "title": "Daniel 2",
+        "balance": 3575.0
+      },
+      {
+        "title": "Daniel Wola-aina",
+        "balance": 13107.0
+      }
+    ]
+  },
+  {
+    "email": "odionakue66@gmail.com",
+    "first_name": "Okojie",
+    "last_name": "Peter",
+    "wallet_bal": 520.0,
+    "savings": [
+      {
+        "title": "Paul",
+        "balance": 0.0
+      },
+      {
+        "title": "Peter",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "praisebamgboye@gmail.com",
+    "first_name": "Praise ",
+    "last_name": "Bamgboye ",
+    "wallet_bal": 12654.0,
+    "savings": [
+      {
+        "title": "1000 Weekly",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ogundiran2001@gmail.com",
+    "first_name": "Isaac",
+    "last_name": "Ogundiran",
+    "wallet_bal": 44.0,
+    "savings": [
+      {
+        "title": "For The Future",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ometere99@gmail.com",
+    "first_name": "Precious",
+    "last_name": "King",
+    "wallet_bal": 0.3,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "damilarebello12@gmail.com",
+    "first_name": "Damilare ",
+    "last_name": "Bello",
+    "wallet_bal": 810.4,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "daraoloye99@gmail.com",
+    "first_name": "Oluwadara",
+    "last_name": "Oloye",
+    "wallet_bal": 0.5,
+    "savings": [
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 3",
+        "balance": 0.0
+      },
+      {
+        "title": "Rainy day",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "danieljesusegun@gmail.com",
+    "first_name": "Daniel",
+    "last_name": "Jesusegun",
+    "wallet_bal": 0.92,
+    "savings": []
+  },
+  {
+    "email": "prevailer12@gmail.com",
+    "first_name": "Jude",
+    "last_name": "Udoh",
+    "wallet_bal": 4043.0,
+    "savings": [
+      {
+        "title": "Laptop",
+        "balance": 0.0
+      },
+      {
+        "title": "House",
+        "balance": 7607.0
+      }
+    ]
+  },
+  {
+    "email": "babsolayinkanigeriaenterprises@gmail.com",
+    "first_name": "Quadri",
+    "last_name": "Olayinka Subair",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Travel Deals",
+        "balance": 0.0
+      },
+      {
+        "title": "Building Contractor Plan",
+        "balance": 18.0
+      }
+    ]
+  },
+  {
+    "email": "chiigoziie@gmail.com",
+    "first_name": "Chigozie",
+    "last_name": "Lemoha",
+    "wallet_bal": 1000.0,
+    "savings": [
+      {
+        "title": "1000 Challenge",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adegoke.adeyemi29@gmail.com",
+    "first_name": "Adeyemi",
+    "last_name": "Adegoke",
+    "wallet_bal": 42.0,
+    "savings": [
+      {
+        "title": "To Get Money For Business",
+        "balance": 1159.0
+      }
+    ]
+  },
+  {
+    "email": "oriretanfopefoluwa@gmail.com",
+    "first_name": "Fofefoluwa",
+    "last_name": "Oriretan",
+    "wallet_bal": 2197.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ibitoyeikeoluwa@gmail.com",
+    "first_name": "Glory",
+    "last_name": "Ibitoye",
+    "wallet_bal": 82.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "adebolaadefila11@gmail.com",
+    "first_name": "Adebola",
+    "last_name": "Adefila",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 44580.0
+      }
+    ]
+  },
+  {
+    "email": "chiwykes@gmail.com",
+    "first_name": "Chiwuikem",
+    "last_name": "Akalonu",
+    "wallet_bal": 5494.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ezidubem14@gmail.com",
+    "first_name": "Ifedubem",
+    "last_name": "Ezike",
+    "wallet_bal": 20163.0,
+    "savings": [
+      {
+        "title": "Emergency",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "babafemiayodeji29@gmail.com",
+    "first_name": "Elijah",
+    "last_name": "Ayodeji",
+    "wallet_bal": 6.0,
+    "savings": [
+      {
+        "title": "My Mummy",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "nkemos3@gmail.com",
+    "first_name": "Nkemjika",
+    "last_name": "Osondu",
+    "wallet_bal": 3299.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ifenna.ibezim@stu.cu.edu.ng",
+    "first_name": "Ifenna",
+    "last_name": "Ibezim",
+    "wallet_bal": 274.0,
+    "savings": [
+      {
+        "title": "First Thousands",
+        "balance": 12135.0
+      }
+    ]
+  },
+  {
+    "email": "nkezennaji1111@gmail.com",
+    "first_name": "Alaeze",
+    "last_name": "Nnaji",
+    "wallet_bal": 2199.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ohikhenaglory2002@gmail.com",
+    "first_name": "Glory",
+    "last_name": "Ohikhena",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 4931.0
+      }
+    ]
+  },
+  {
+    "email": "ntochukwu032@gmail.com",
+    "first_name": "Tochukwu",
+    "last_name": "Nwachukwu",
+    "wallet_bal": 544.0,
+    "savings": [
+      {
+        "title": "Graduation",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chideravictory794@gmail.com",
+    "first_name": "Chidera",
+    "last_name": "Victory",
+    "wallet_bal": 2310.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ettehshalom123@gmail.com",
+    "first_name": "Etteh",
+    "last_name": "Shalom",
+    "wallet_bal": 498.0,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "1000weekly",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "sundaybuls@gmail.com",
+    "first_name": "Bulus",
+    "last_name": "Sunday",
+    "wallet_bal": 229.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "okoroaforwisdom14@gmail.com",
+    "first_name": "Okoroafor",
+    "last_name": "Wisdom",
+    "wallet_bal": 40.0,
+    "savings": [
+      {
+        "title": "Investment",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "seyi.aiye@gmail.com",
+    "first_name": "Oluwaseyi",
+    "last_name": "Aiyeobasan",
+    "wallet_bal": 0.28,
+    "savings": [
+      {
+        "title": "Personal",
+        "balance": 622.0
+      }
+    ]
+  },
+  {
+    "email": "anuoluwapo.adelaja@yahoo.com",
+    "first_name": "Anuoluwapo",
+    "last_name": "Adelaja",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Soar",
+        "balance": 161145.0
+      }
+    ]
+  },
+  {
+    "email": "ulokanjo@gmail.com",
+    "first_name": "Onyebuchi",
+    "last_name": "Ulokanjo",
+    "wallet_bal": 124.0,
+    "savings": []
+  },
+  {
+    "email": "chideraekwuno@gmail.com",
+    "first_name": "Ekwuno",
+    "last_name": "Chidera",
+    "wallet_bal": 335.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "scar@investnaira.me",
+    "first_name": "Precious",
+    "last_name": "Ndukwe",
+    "wallet_bal": 1.0,
+    "savings": []
+  },
+  {
+    "email": "tochukwuikechukwu669@gmail.com",
+    "first_name": "Tochukwu",
+    "last_name": "Ikechukwu",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Stoke",
+        "balance": 1158.0
+      }
+    ]
+  },
+  {
+    "email": "arinzegaara51@gmail.com",
+    "first_name": "Chidinma",
+    "last_name": "Arinze",
+    "wallet_bal": 1162.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "alfred.tombri@stu.cu.edu.ng",
+    "first_name": "Alfred",
+    "last_name": "Tombri",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Operation Compound Wealth",
+        "balance": 86.0
+      }
+    ]
+  },
+  {
+    "email": "sarmyonline@gmail.com",
+    "first_name": "Uchenna",
+    "last_name": "Uchenna",
+    "wallet_bal": 1033.0,
+    "savings": [
+      {
+        "title": "Sarmy",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "oluwasemiloreolaniran7@gmail.com",
+    "first_name": "Oluwasemilore",
+    "last_name": "Olaniran",
+    "wallet_bal": 1136.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "michelleilechukwu@gmail.com",
+    "first_name": "Michelle",
+    "last_name": "Ilechukwu",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Vacation And Shopping",
+        "balance": 6624.0
+      }
+    ]
+  },
+  {
+    "email": "eyifasanu@gmail.com",
+    "first_name": "Eyitemi",
+    "last_name": "Fasanu",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 8418.0
+      }
+    ]
+  },
+  {
+    "email": "adedunke.lala@stu.cu.edu.ng",
+    "first_name": "Adedunke",
+    "last_name": "Lala",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "1000challenge",
+        "balance": 3028.0
+      }
+    ]
+  },
+  {
+    "email": "chideraxugorji@gmail.com",
+    "first_name": "Chidera",
+    "last_name": "Ugorji",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "adebu08@yahoo.com",
+    "first_name": "Enilara",
+    "last_name": "Adefila",
+    "wallet_bal": 99.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 1245.0
+      }
+    ]
+  },
+  {
+    "email": "ogbonnabn@gmail.com",
+    "first_name": "Ogbonna",
+    "last_name": "Nnaemeka",
+    "wallet_bal": 1516.8,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "gideonojigi@gmail.com",
+    "first_name": "Gideon",
+    "last_name": "Ojigi",
+    "wallet_bal": 1146.0,
+    "savings": [
+      {
+        "title": "Invest",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "oladokung@gmail.com",
+    "first_name": "Gbenga",
+    "last_name": "Oladokun",
+    "wallet_bal": 1668.77,
+    "savings": [
+      {
+        "title": "Tife",
+        "balance": 0.0
+      },
+      {
+        "title": "Tiyin",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "odunugaoluwaseun7@gmail.com",
+    "first_name": "Babatunde",
+    "last_name": "Odunuga",
+    "wallet_bal": 237.0,
+    "savings": [
+      {
+        "title": "It",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "blgnbalogun@gmail.com",
+    "first_name": "Gift",
+    "last_name": "Balogun",
+    "wallet_bal": 107.43,
+    "savings": [
+      {
+        "title": "Investment",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "awkins.jnrll@gmail.com",
+    "first_name": "Inengiya",
+    "last_name": "Ibifiri",
+    "wallet_bal": 6.51,
+    "savings": [
+      {
+        "title": "Akin",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "angarobusan@gmail.com",
+    "first_name": "Busan",
+    "last_name": "Angaro",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Just Grow My Money",
+        "balance": 7111.0
+      }
+    ]
+  },
+  {
+    "email": "bolexinfinity1@gmail.com",
+    "first_name": "Boluwatife",
+    "last_name": "Morawo",
+    "wallet_bal": 5431.0,
+    "savings": [
+      {
+        "title": "My goal",
+        "balance": 0.0
+      },
+      {
+        "title": "First goal",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "iretondefasanu@gmail.com",
+    "first_name": "Iretonde",
+    "last_name": "Fasanu",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 1344.0
+      }
+    ]
+  },
+  {
+    "email": "investnaira1@gmail.com",
+    "first_name": "Invest",
+    "last_name": "Naira",
+    "wallet_bal": 13090.0,
+    "savings": [
+      {
+        "title": "Plan 3",
+        "balance": 1737.0
+      },
+      {
+        "title": "Vanessa",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire a decade",
+        "balance": 39043.0
+      },
+      {
+        "title": "Jeff Bezos - Billionaire",
+        "balance": 259.0
+      }
+    ]
+  },
+  {
+    "email": "seunadanike@aol.com",
+    "first_name": "Olive media",
+    "last_name": "Covenant",
+    "wallet_bal": 81953.0,
+    "savings": [
+      {
+        "title": "Savings",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "clbridget0@gmail.com",
+    "first_name": "Bridget",
+    "last_name": "Clifford",
+    "wallet_bal": 525.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "isdera2003@gmail.com",
+    "first_name": "Chidera",
+    "last_name": "Mbadugha",
+    "wallet_bal": 62.0,
+    "savings": [
+      {
+        "title": "Savings",
+        "balance": 37.0
+      },
+      {
+        "title": "Testing",
+        "balance": 0.0
+      },
+      {
+        "title": "Surviving 4oolvl",
+        "balance": 3.0
+      },
+      {
+        "title": "Travel In 10 Yrs",
+        "balance": 96.0
+      }
+    ]
+  },
+  {
+    "email": "favour.ige@stu.cu.edu.ng",
+    "first_name": "Favour Oluwatomisin",
+    "last_name": "Ige",
+    "wallet_bal": 46.4,
+    "savings": [
+      {
+        "title": "Repay",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "abiodunakinwusi1984@gmail.com",
+    "first_name": "Abiodun",
+    "last_name": "Akinwusi",
+    "wallet_bal": 1221.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "tomiwaotusin@gmail.com",
+    "first_name": "Olatomiwa",
+    "last_name": "Oluwatusin",
+    "wallet_bal": 34.0,
+    "savings": [
+      {
+        "title": "The 10 Year Wealth Plan",
+        "balance": 534.0
+      }
+    ]
+  },
+  {
+    "email": "millykuyembo@gmail.com",
+    "first_name": "Shekwonya",
+    "last_name": "Kuyembo",
+    "wallet_bal": 1165.28,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "amoorachael3@gmail.com",
+    "first_name": "Rachael",
+    "last_name": "Amoo",
+    "wallet_bal": 0.33,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "1tobiiyanda@gmail.com",
+    "first_name": "Tobi",
+    "last_name": "Iyanda",
+    "wallet_bal": 2.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 14046.0
+      },
+      {
+        "title": "Imisi & Ire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ayomide.oluyide@stu.cu.edu.ng",
+    "first_name": "Ayomide",
+    "last_name": "Oluyide",
+    "wallet_bal": 688.0,
+    "savings": [
+      {
+        "title": "Savings",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ifeoluwaolayinka6@gmail.com",
+    "first_name": "Ifeoluwa",
+    "last_name": "Olayinka",
+    "wallet_bal": 52.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 2330.0
+      }
+    ]
+  },
+  {
+    "email": "momoduvictor1@gmail.com",
+    "first_name": "Victor",
+    "last_name": "Momodu",
+    "wallet_bal": 0.1,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Future Investments",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "mbabacharles@yahoo.com",
+    "first_name": "Charles ",
+    "last_name": "Mbaba ",
+    "wallet_bal": 60.0,
+    "savings": [
+      {
+        "title": "Race11",
+        "balance": 24563.0
+      }
+    ]
+  },
+  {
+    "email": "omoladeoluwole8@gmail.com",
+    "first_name": "Omolade",
+    "last_name": "Oluwole",
+    "wallet_bal": 1.0,
+    "savings": [
+      {
+        "title": "High Diploma",
+        "balance": 60.0
+      },
+      {
+        "title": "My Higher National Diploma",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "emolasamson@gmail.com",
+    "first_name": "Samson",
+    "last_name": "Ola",
+    "wallet_bal": 74.0,
+    "savings": [
+      {
+        "title": "Emosky",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "chijamachidera2@gmail.com",
+    "first_name": "Chidera",
+    "last_name": "Chijama",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "prudence.atohengbe@gmail.com",
+    "first_name": "Prudence",
+    "last_name": "Atohengbe",
+    "wallet_bal": 905.0,
+    "savings": [
+      {
+        "title": "Post-nysc",
+        "balance": 65000.0
+      }
+    ]
+  },
+  {
+    "email": "giochukwuemeka@gmail.com",
+    "first_name": "Glory",
+    "last_name": "Chukwuemeka",
+    "wallet_bal": 636.0,
+    "savings": [
+      {
+        "title": "Savings culture",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "asam105@protonmail.com",
+    "first_name": "Abu",
+    "last_name": "Bakr",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Asam",
+        "balance": 114.0
+      }
+    ]
+  },
+  {
+    "email": "ememukpong16@gmail.com",
+    "first_name": "Emem-obong",
+    "last_name": "Ukpong",
+    "wallet_bal": 287.0,
+    "savings": [
+      {
+        "title": "Graduation",
+        "balance": 6148.0
+      },
+      {
+        "title": "End Of Year",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kannywest1402@gmail.com",
+    "first_name": "Kanny",
+    "last_name": "West",
+    "wallet_bal": 5.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "harrisontolulopejack@gmail.com",
+    "first_name": "Samson",
+    "last_name": "Otoki",
+    "wallet_bal": 102.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "uchechukwumartins358@gmail.com",
+    "first_name": "Aaron ",
+    "last_name": "Uchechukwu",
+    "wallet_bal": 14.0,
+    "savings": []
+  },
+  {
+    "email": "vikemadan@gmail.com",
+    "first_name": "Victor chinaecherem",
+    "last_name": "Agughara",
+    "wallet_bal": 22885.97,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Mfg ",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "ojiekaoko@gmail.com",
+    "first_name": "Ojieka",
+    "last_name": "Oko",
+    "wallet_bal": 12769.0,
+    "savings": [
+      {
+        "title": "Save2",
+        "balance": 0.0
+      },
+      {
+        "title": "Save3",
+        "balance": 0.0
+      },
+      {
+        "title": "Save",
+        "balance": 7182.0
+      }
+    ]
+  },
+  {
+    "email": "marypowell4190@gmail.com",
+    "first_name": "Good",
+    "last_name": "Morning",
+    "wallet_bal": 2.0,
+    "savings": [
+      {
+        "title": "Cat",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "damilareadetoyinbo08@gmail.com",
+    "first_name": "Adetoyinbo",
+    "last_name": "Damilare",
+    "wallet_bal": 214.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "amaraokoye99@gmail.com",
+    "first_name": "Amarachi",
+    "last_name": "Aka-okoye",
+    "wallet_bal": 29304.2,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Plan 2",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "olivemedialumni@gmail.com",
+    "first_name": "Olivemedia",
+    "last_name": "Alumni",
+    "wallet_bal": 1000.0,
+    "savings": []
+  },
+  {
+    "email": "alabialvin@gmail.com",
+    "first_name": "Oluwatimilehin",
+    "last_name": "Alabi",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 1187.0
+      }
+    ]
+  },
+  {
+    "email": "christopherbinoran97@gmail.com",
+    "first_name": "Christopher",
+    "last_name": "Binoran",
+    "wallet_bal": 0.71,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 1971.0
+      }
+    ]
+  },
+  {
+    "email": "nastyjaphleth@gmail.com",
+    "first_name": "Ogah",
+    "last_name": "Japhleth",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 1.0
+      }
+    ]
+  },
+  {
+    "email": "manuelayo650@gmail.com",
+    "first_name": "Manuel",
+    "last_name": "Ayo",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "victorthompson638@gmail.com",
+    "first_name": "Thompson ",
+    "last_name": "Victor ",
+    "wallet_bal": 23.42,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "etopjacob@gmail.com",
+    "first_name": "Etop",
+    "last_name": "Jacob",
+    "wallet_bal": 100.0,
+    "savings": [
+      {
+        "title": "House",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "akubohbenjamin@gmail.com",
+    "first_name": "Benjamin",
+    "last_name": "Akauboh",
+    "wallet_bal": 2.7,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "akinbioyinkan@gmail.com",
+    "first_name": "Oluwakemisola",
+    "last_name": "Akinbi",
+    "wallet_bal": 0.1,
+    "savings": [
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "toninatho@gmail.com",
+    "first_name": "Oluwatoni",
+    "last_name": "Nathaniel",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Long Term",
+        "balance": 926476.0
+      },
+      {
+        "title": "Faith",
+        "balance": 599.49
+      },
+      {
+        "title": "1000 Monthly Challenge",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "moyotician@gmail.com",
+    "first_name": "Moyosore",
+    "last_name": "Famewo",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "1000 Daily",
+        "balance": 10986.0
+      },
+      {
+        "title": "Plan 1",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "qsubair@gmail.com",
+    "first_name": "Quadri",
+    "last_name": "Olayinka subair",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Daily Needs For Business",
+        "balance": 0.0
+      },
+      {
+        "title": "Daily Needs",
+        "balance": 0.0
+      },
+      {
+        "title": "Real Estate Investment",
+        "balance": 17.0
+      },
+      {
+        "title": "Sirkay Children Investment Pro",
+        "balance": 29.0
+      },
+      {
+        "title": "Children Edu Investment",
+        "balance": 29.0
+      }
+    ]
+  },
+  {
+    "email": "oldwifa@gmail.com",
+    "first_name": "Wisdom",
+    "last_name": "Abel",
+    "wallet_bal": 267.0,
+    "savings": [
+      {
+        "title": "Achievement",
+        "balance": 0.0
+      },
+      {
+        "title": "Academics",
+        "balance": 0.0
+      },
+      {
+        "title": "Wis",
+        "balance": 0.0
+      },
+      {
+        "title": "Good",
+        "balance": 0.0
+      },
+      {
+        "title": "Scool",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "kfaash63@gmail.com",
+    "first_name": "Olukotemi ",
+    "last_name": "Fasanu",
+    "wallet_bal": 0.5,
+    "savings": [
+      {
+        "title": "200 Thousand Goal",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "oyebowaleigbega@gmail.com",
+    "first_name": "Igbegaoluwa",
+    "last_name": "Oyebowale",
+    "wallet_bal": 220.0,
+    "savings": []
+  },
+  {
+    "email": "tahirjamil702@gmail.com",
+    "first_name": "Tahir",
+    "last_name": "Jamil",
+    "wallet_bal": 1000.0,
+    "savings": [
+      {
+        "title": "Buy Land",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "iniobong10000@gmail.com",
+    "first_name": "Ini-obong",
+    "last_name": "Ukpong",
+    "wallet_bal": 0.0,
+    "savings": [
+      {
+        "title": "Millionaire In A Decade",
+        "balance": 41861.3
+      },
+      {
+        "title": "1000 Weekly",
+        "balance": 2374.0
+      }
+    ]
+  },
+  {
+    "email": "fdurujimoses@gmail.com",
+    "first_name": "Favour",
+    "last_name": "Duruji-moses",
+    "wallet_bal": 0.2,
+    "savings": [
+      {
+        "title": "Uchechukwu",
+        "balance": 84331.6
+      },
+      {
+        "title": "Stephanie",
+        "balance": 84947.0
+      },
+      {
+        "title": "Personal Savings",
+        "balance": 86411.0
+      },
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      },
+      {
+        "title": "Somtochukwu",
+        "balance": 86311.0
+      }
+    ]
+  },
+  {
+    "email": "anyablessing15@gmail.com",
+    "first_name": "Chiamaka",
+    "last_name": "Anya",
+    "wallet_bal": 1450.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 2231.0
+      }
+    ]
+  },
+  {
+    "email": "shittubaqi@gmail.com",
+    "first_name": "Shittu",
+    "last_name": "Olalekan",
+    "wallet_bal": 100.0,
+    "savings": [
+      {
+        "title": "Thousan",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "shalomwokoma2015@gmail.com",
+    "first_name": "Shalom",
+    "last_name": "Wokoma",
+    "wallet_bal": 102.0,
+    "savings": [
+      {
+        "title": "Millionaire",
+        "balance": 0.0
+      }
+    ]
+  },
+  {
+    "email": "stephencoded.tolulope@gmail.com",
+    "first_name": "Stephen",
+    "last_name": "Tolulope",
+    "wallet_bal": 1000.0,
+    "savings": []
+  },
+  {
+    "email": "dioebikekeme177@gmail.com",
+    "first_name": "Ebikekeme",
+    "last_name": "Dio",
+    "wallet_bal": 200.0,
+    "savings": []
+  },
+  {
+    "email": "kinqtusolo@gmail.com",
+    "first_name": "Solomon",
+    "last_name": "Onoja",
+    "wallet_bal": 200.0,
+    "savings": []
+  },
+  {
+    "email": "isaiahvictor91@gmail.com",
+    "first_name": "Victor Nmaduabuchi",
+    "last_name": "Isaac",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "ijeomaokon43@gmail.com",
+    "first_name": "Okon",
+    "last_name": "Ijeoma",
+    "wallet_bal": 100.0,
+    "savings": []
+  },
+  {
+    "email": "igwejamesakachukwu@gmail.com",
+    "first_name": "James Akachukwu",
+    "last_name": "James Igwe",
+    "wallet_bal": 1000.0,
+    "savings": []
+  }
+]

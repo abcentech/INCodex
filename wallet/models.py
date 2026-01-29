@@ -65,6 +65,30 @@ class Transaction(models.Model):
     def __str__(self):
         return f"{self.transaction_type} - {self.amount}"
 
+class LedgerEntry(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    transaction = models.ForeignKey(Transaction, related_name='ledger_entries', on_delete=models.CASCADE)
+    entity_type = models.CharField(max_length=20, choices=[('WALLET','Wallet'),('PLAN','Plan'),('SYSTEM','System')])
+    entity_id = models.UUIDField()
+    amount = models.DecimalField(max_digits=100, decimal_places=2) # Positive for credit, negative for debit
+    balance_before = models.DecimalField(max_digits=100, decimal_places=2)
+    balance_after = models.DecimalField(max_digits=100, decimal_places=2)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.entity_type} {self.entity_id} - {self.amount}"
+
+class IdempotencyKey(models.Model):
+    key = models.CharField(max_length=255, unique=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    response_code = models.IntegerField(null=True)
+    response_body = models.JSONField(null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+
+    def __str__(self):
+        return self.key
+
 @transaction.atomic
 def create_transaction(**kwargs):
     sender_wallet = kwargs.pop('sender_wallet', None)
@@ -80,6 +104,9 @@ def create_transaction(**kwargs):
 @transaction.atomic
 def process_transaction(tx_id):
     tx = Transaction.objects.select_for_update().get(id=tx_id)
+    if tx.transaction_status == 'SUCCESS':
+        return True, 'Already processed'
+        
     try:
         if tx.sender_entity == 'WALLET' and tx.sender_id:
             sender = Wallet.objects.select_for_update().get(id=tx.sender_id)
@@ -87,12 +114,35 @@ def process_transaction(tx_id):
                 tx.transaction_status = 'FAILED'
                 tx.save()
                 return False, 'Insufficient funds'
+            
+            balance_before = sender.balance
             sender.balance -= tx.amount
             sender.save()
+
+            LedgerEntry.objects.create(
+                transaction=tx,
+                entity_type='WALLET',
+                entity_id=tx.sender_id,
+                amount=-tx.amount,
+                balance_before=balance_before,
+                balance_after=sender.balance
+            )
+
         if tx.receiver_entity == 'WALLET' and tx.receiver_id:
             receiver = Wallet.objects.select_for_update().get(id=tx.receiver_id)
+            balance_before = receiver.balance
             receiver.balance += tx.amount
             receiver.save()
+
+            LedgerEntry.objects.create(
+                transaction=tx,
+                entity_type='WALLET',
+                entity_id=tx.receiver_id,
+                amount=tx.amount,
+                balance_before=balance_before,
+                balance_after=receiver.balance
+            )
+
         tx.transaction_status = 'SUCCESS'
         tx.save()
         return True, 'Success'

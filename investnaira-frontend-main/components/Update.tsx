@@ -11,7 +11,7 @@ const NewsletterForm = () => {
     };
 
     return (
-        <div className="bg-dark rounded-2xl py-8 sm:py-12 lg:py-16 px-6 sm:px-12 lg:px-24 mx-4 sm:mx-8 lg:mx-14 mb-12 sm:mb-16 lg:mb-24">
+        <div className="bg-dark dark:bg-slate-800 rounded-2xl py-8 sm:py-12 lg:py-16 px-6 sm:px-12 lg:px-24 mx-4 sm:mx-8 lg:mx-14 mb-12 sm:mb-16 lg:mb-24 shadow-2xl dark:shadow-slate-900/50">
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-2 text-center font-rowdies">Get regular updates</h2>
             <p className="text-gray-300 text-sm sm:text-[15px] mb-4 sm:mb-6 text-center">
                 Get tailored updates on the latest investment trends, platform features, and market insights. <br className="hidden sm:inline" />

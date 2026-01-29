@@ -5,11 +5,11 @@ import { formatCurrency } from '../../../utils/format';
 
 const COLORS = ['#16a34a', '#EAB308', '#3b82f6', '#FF8042'];
 
-const AssetsPieChart = ({ data }: { data: any }) => {
+const AssetsPieChart = ({ allocation }: { allocation: any }) => {
     // Transform allocation object to array
     const chartData = [
-        { name: 'Wallet', value: parseFloat(data.wallet || 0) },
-        { name: 'Savings Plans', value: parseFloat(data.savings || 0) },
+        { name: 'Wallet', value: parseFloat(allocation?.wallet || 0) },
+        { name: 'Savings Plans', value: parseFloat(allocation?.savings || 0) },
     ].filter(item => item.value > 0);
 
     return (

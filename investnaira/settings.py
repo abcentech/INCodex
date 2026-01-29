@@ -113,6 +113,9 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'wallet',
     'campaigns',
+    'notifications',
+    'referrals',
+    'chatbot',
 
     # third_party
     'corsheaders',
@@ -262,6 +265,7 @@ CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 AUTH_USER_MODEL = 'users.User'
 
 AUTHENTICATION_BACKENDS = [
+    'users.backends.DevAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]

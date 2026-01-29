@@ -37,7 +37,11 @@ def create_business_wallet(sender, instance, created, **kwargs):
         
 @receiver(pre_delete, sender=User)
 def handle_user_deletion(sender, instance, **kwargs):
-    if hasattr(instance, 'wallet'):
-        instance.wallet.user = None
-        instance.wallet.save()
-        print("Wallet user set to null")
+    try:
+        if hasattr(instance, 'wallet'):
+            wallet = instance.wallet
+            wallet.user = None
+            wallet.save()
+            print("Wallet user set to null")
+    except Exception:
+        pass

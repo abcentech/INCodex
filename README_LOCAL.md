@@ -30,3 +30,5 @@ Server will be at: [http://localhost:3000](http://localhost:3000)
 ## Troubleshooting
 - **Database**: The app uses `db.sqlite3`. If you face migration errors, delete it and run `python3 manage.py migrate`.
 - **Node Not Found**: Ensure you ran the `export PATH=...` command in the frontend terminal.
+npm run dev
+- **Missing Dependencies**: If you encounter errors about missing packages, run `npm install` in the `investnaira-frontend-main` directory before running:

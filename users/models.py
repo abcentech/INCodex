@@ -49,6 +49,11 @@ class Customer(User):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, blank=True)
     state_of_origin = models.CharField(max_length=20, null=True)    # change default to None, when you clearn the db
     state_of_residence = models.CharField(max_length=20, null=True)
+    risk_profile = models.CharField(
+        max_length=20, 
+        choices=[('CONSERVATIVE', 'Conservative'), ('BALANCED', 'Balanced'), ('AGGRESIVE', 'Aggresive')], 
+        default='BALANCED'
+    )
     next_of_kin_name = models.CharField(max_length=20, null=True)
     next_of_kin_phone =  encrypt(models.CharField(max_length=15, unique=True, null=True))
     address = models.CharField(max_length=100, blank=True, null=True)
@@ -87,3 +92,41 @@ class OTP(models.Model):
 
     def is_valid(self):
         return timezone.now() <= self.expires_at
+
+class UserTask(models.Model):
+    user = models.ForeignKey(User, related_name='tasks', on_delete=models.CASCADE)
+    title = models.CharField(max_length=255)
+    description = models.TextField(blank=True)
+    action_link = models.CharField(max_length=255, blank=True)
+    is_completed = models.BooleanField(default=False)
+    reward_text = models.CharField(max_length=100, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+class UserSecurity(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='security')
+    is_2fa_enabled = models.BooleanField(default=False)
+    totp_secret = encrypt(models.CharField(max_length=32, blank=True, null=True))
+    backup_codes = encrypt(models.JSONField(default=list, blank=True))
+    
+    # Session Management
+    active_sessions_count = models.IntegerField(default=0)
+    last_login_ip = models.GenericIPAddressField(null=True, blank=True)
+    last_login_device = models.CharField(max_length=255, blank=True, null=True)
+    
+    def __str__(self):
+        return f"Security for {self.user.email}"
+
+class LoginHistory(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='login_history')
+    ip_address = models.GenericIPAddressField()
+    device_info = models.CharField(max_length=255)
+    location = models.CharField(max_length=255, blank=True, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    is_successful = models.BooleanField(default=True)
+
+    class Meta:
+        verbose_name_plural = "Login Histories"
+        ordering = ['-timestamp']
+
+    def __str__(self):
+        return f"{self.user.email} - {self.ip_address} at {self.timestamp}"
